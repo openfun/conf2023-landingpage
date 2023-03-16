@@ -1,8 +1,7 @@
 import { Button } from "components/Button";
-import { PropsWithChildren } from "react";
+import { HTMLAttributes, PropsWithChildren } from "react";
 
-const gradient =
-  "text-transparent bg-clip-text bg-gradient-to-r from-fun-blue-500 to-fun-blue-200";
+const padding = "px-5 md:px-0 ";
 
 export default () => {
   return (
@@ -17,28 +16,31 @@ export default () => {
 };
 
 const Container = ({ children }: PropsWithChildren) => (
-  <div className="px-5 md:px-0 text-center md:text-left">{children}</div>
+  <div className="text-center md:text-left">{children}</div>
 );
 
 const Hero = () => (
-  <div className="flex flex-col-reverse md:flex-row md:items-center md:px-28 w-full md:max-w-screen-2xl mx-auto mt-6">
+  <div
+    className={`flex flex-col-reverse md:flex-row md:items-center md:px-28 w-full md:max-w-screen-2xl mx-auto mt-20 ${padding}`}
+  >
     <div className="basis-1/2">
-      <h1
-        className={`font-extrabold text-4xl md:text-5xl break-words ${gradient}`}
-      >
-        Intelligence Artificielle et Éducation
+      <h1 className="font-extrabold text-4xl md:text-4xl break-words text-fun-blue-500">
+        <span className="break-keep whitespace-nowrap">L'IA en action :</span>
+        <br />
+        comment transformer l'éducation pour demain ?
       </h1>
-      <h2 className="font-semibold text-2xl mt-4">Conférence Annuelle</h2>
-      <h2 className="font-semibold text-xl">8 et 9 Juin 2023</h2>
+      <h2 className="font-semibold text-2xl mt-4">Conférence annuelle</h2>
+      <h2 className="font-semibold text-xl">8 et 9 juin 2023</h2>
       <p className="mt-4 text-gray-600">
-        France Université Numérique est un groupement d’intérêt public au
-        service de ses membres et partenaires. Nous fédérons un réseau
-        d'universités, d'écoles, d'instituts de recherche, d'agences
-        gouvernementales, d'entreprises edtech et de contributeurs qui se
-        consacrent à la construction de services numériques souverains pour
-        l'éducation.
+        L'éducation est l'un des domaines les plus passionnants de notre société
+        et l'intelligence artificielle (IA) est en train de changer la donne en
+        matière de méthodes d'apprentissage et de pédagogie. France Université
+        Numérique, qui se situe au croisement de l’enseignement supérieur et des
+        acteurs de l’innovation numérique et technologique, organise cet
+        événement pour faire un point sur ce sujet grâce à un groupe d'experts
+        de premier plan afin de discuter des dernières tendances et innovations.
       </p>
-      <div className="mt-4 flex justify-center md:block">
+      <div className="mt-6 flex justify-center md:block">
         <BookButton />
       </div>
     </div>
@@ -52,64 +54,95 @@ const Hero = () => (
   </div>
 );
 
-const Content = () => (
-  <div className="mx-auto md:w-[720px] pb-8">
-    <Part title="À propos">
-      <p className="text-gray-600">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus
-        magna a dolor gravida vehicula. Fusce ultricies mollis purus ut
-        lobortis. Fusce pulvinar venenatis varius. Vivamus dapibus lorem odio,
-        nec dictum turpis scelerisque commodo. Vivamus dignissim nulla at
-        pretium iaculis. Etiam dapibus enim ac interdum tincidunt.
-        <br />
-        <br />
-        Duis at luctus erat, at venenatis sapien. Ut lacus tortor, sodales et
-        turpis a, posuere consectetur neque. Pellentesque habitant morbi
-        tristique senectus et netus et malesuada fames ac turpis egestas. Duis
-        vulputate tincidunt orci eget fermentum. Nam nisi tortor, pharetra in
-        tincidunt vel, pellentesque et odio.
-        <br />
-        <br />
-        Aenean eget leo sed nisl molestie malesuada vitae vitae leo. Cras eget
-        purus et eros egestas sollicitudin at in leo. Pellentesque sodales lacus
-        egestas ullamcorper laoreet. Etiam quis fermentum purus. Aenean
-        condimentum dolor leo, vulputate ullamcorper sapien commodo eget.
-      </p>
-    </Part>
-    <Part title="Le lieu">
-      <a href="https://dockbpantin.com/" target="_blank" rel="noreferrer">
-        <img
-          src="place.jpg"
-          alt="Lieu de la conférence"
-          className="h-80 w-full drop-shadow-md rounded hover:drop-shadow-2xl transition-all object-cover"
-        />
-      </a>
-      <h3 className="text-center mt-8 text-4xl font-extrabold">
-        Dock B - Pantin
-      </h3>
-      <h3 className="text-center pt-2 text-gray-600">
-        1 place de la pointe, 93500 Pantin
-      </h3>
-      <div className="flex justify-center pt-2">
-        <a
-          href="https://dockbpantin.com/pratique/"
-          className="font-semibold underline text-gray-600"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Voir les infos pratiques
-        </a>
+const ContentSection = ({
+  children,
+  className,
+  ...props
+}: PropsWithChildren & HTMLAttributes<HTMLDivElement>) => {
+  return (
+    <div className={`flex justify-center py-16 ${padding} ${className}`}>
+      <div className="md:w-[720px] " {...props}>
+        {children}
       </div>
-    </Part>
-    <Part title="Agenda">
-      <h3 className="text-center font-semibold text-gray-400 text-xl">
-        Prochainement
-      </h3>
-    </Part>
-    <div className="mt-32 flex justify-center">
-      <BookButton />
     </div>
-  </div>
+  );
+};
+
+const Content = () => (
+  <>
+    <ContentSection>
+      <Part title="À propos">
+        <p className="text-gray-600">
+          Depuis quelque mois, l'arrivée de nouveaux outils basés sur l'usage de
+          l'intelligence artificielle pose question dans le domaine éducatif en
+          général et dans l’enseignement supérieur en particulier. Comment
+          fonctionnent-ils réellement ? Quels seront les usages qui peuvent en
+          découler dès maintenant ? Comment anticiper les transformations
+          éducatives à venir ? Quels sont leurs impacts sur un déroulé
+          pédagogique et sur les modalités d'examen ? Faut-il les interdire
+          purement et simplement ou doit-on les intégrer dans les activités de
+          formation ?
+          <br />
+          <br />
+          Toutes ces questions et bien d’autres encore ont pour ambition d’être
+          abordées avec sérénité et lucidité afin d’anticiper l’impact que va
+          avoir l’usage de l’Intelligence Artificielle (IA) dans l’enseignement
+          de demain.
+        </p>
+      </Part>
+    </ContentSection>
+    <ContentSection className="bg-fun-grey-100">
+      <Part title="Le lieu">
+        <a href="https://dockbpantin.com/" target="_blank" rel="noreferrer">
+          <img
+            src="place.jpg"
+            alt="Lieu de la conférence"
+            className="h-80 w-full drop-shadow-md rounded hover:drop-shadow-2xl transition-all object-cover"
+          />
+        </a>
+        <h3 className="text-center mt-8 text-2xl font-extrabold">
+          Dock B - Pantin
+        </h3>
+        <h3 className="text-center pt-2 text-gray-600">
+          1 place de la pointe, 93500 Pantin
+        </h3>
+        <div className="flex justify-center pt-2">
+          <a
+            href="https://dockbpantin.com/pratique/"
+            className="font-semibold underline text-gray-600"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Voir les infos pratiques
+          </a>
+        </div>
+      </Part>
+    </ContentSection>
+    <ContentSection>
+      <Part title="Programme">
+        <h3 className="text-center font-semibold text-gray-400 text-xl">
+          Prochainement
+        </h3>
+      </Part>
+    </ContentSection>
+    <ContentSection className="bg-fun-grey-100">
+      <Part title="Qui sommes-nous ?">
+        <p className="text-gray-600">
+          France Université Numérique est un groupement d’intérêt public au
+          service de ses membres et partenaires. Nous fédérons un réseau
+          d'universités, d'écoles, d'instituts de recherche, d'agences
+          gouvernementales, d'entreprises edtech et de contributeurs qui se
+          consacrent à la construction de services numériques souverains pour
+          l'éducation.
+        </p>
+      </Part>
+    </ContentSection>
+    <ContentSection>
+      <div className="mt-14 flex justify-center">
+        <BookButton />
+      </div>
+    </ContentSection>
+  </>
 );
 
 const BookButton = () => (
@@ -130,16 +163,6 @@ const Footer = () => (
 
     <div className="bg-fun-blue-900 h-36 text-white flex flex-col items-center justify-center px-4">
       <div>
-        Conçu par{" "}
-        <a
-          href="https://www.linkedin.com/in/nathanvss/"
-          target="_blank"
-          className="font-semibold"
-          rel="noreferrer"
-        >
-          Nathan Vasse
-        </a>{" "}
-        pour{" "}
         <a
           href="https://www.france-universite-numerique.fr/"
           target="_blank"
@@ -164,8 +187,8 @@ const Footer = () => (
 );
 
 const Part = (props: { title: string } & PropsWithChildren) => (
-  <div className="mt-16">
-    <h2 className={`text-4xl font-extrabold text-center mb-8 ${gradient}`}>
+  <div>
+    <h2 className="text-4xl font-extrabold text-center mb-8 text-fun-blue-500">
       {props.title}
     </h2>
     {props.children}

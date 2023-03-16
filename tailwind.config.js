@@ -10,14 +10,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)', ...fontFamily.sans],
+        sans: ['var(--font-base)', ...fontFamily.sans],
       },
       colors: {
         'fun-blue': {
           900: '#0A2540',
-          500: '#2A5ABC',
+          500: '#256BAF',
           200: '#73cedc'
         },
+        'fun-grey': {
+          100: '#f8f8f8'
+        }
       },
     },
   },

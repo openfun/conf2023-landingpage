@@ -8,7 +8,7 @@ export const Button = ({
     // eslint-disable-next-line jsx-a11y/anchor-has-content
     <a
       className={
-        "fun__button bg-fun-blue-500 text-white font-medium px-4 py-2 rounded-full drop-shadow-md " +
+        "fun__button text-white font-bold px-10 py-2 rounded-md inline-block " +
         className
       }
       {...props}

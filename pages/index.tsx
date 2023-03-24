@@ -1,7 +1,11 @@
 import { Button } from "components/Button";
-import { HTMLAttributes, PropsWithChildren } from "react";
+import { AnchorHTMLAttributes, HTMLAttributes, PropsWithChildren } from "react";
+import { Part } from "components/Part";
+import { LargeCard, SmallCard } from "@/components/Cards";
 
 const padding = "px-5 md:px-0 ";
+const gradient =
+  "bg-clip-text bg-gradient-to-r from-white to-fun-orange-500 text-transparent";
 
 export default () => {
   return (
@@ -15,83 +19,63 @@ export default () => {
   );
 };
 
-const Container = ({ children }: PropsWithChildren) => (
-  <div className="text-center md:text-left">{children}</div>
-);
-
 const Hero = () => (
-  <div
-    className={`flex flex-col-reverse md:flex-row md:items-center md:px-28 w-full md:max-w-screen-2xl mx-auto mt-20 ${padding}`}
-  >
-    <div className="basis-1/2">
-      <h1 className="font-extrabold text-4xl md:text-4xl break-words text-fun-blue-500">
-        <span className="break-keep whitespace-nowrap">L'IA en action :</span>
-        <br />
-        comment transformer l'éducation pour demain ?
-      </h1>
-      <h2 className="font-semibold text-2xl mt-4">Conférence annuelle</h2>
-      <h2 className="font-semibold text-xl">8 et 9 juin 2023</h2>
-      <p className="mt-4 text-gray-600">
-        L'éducation est l'un des domaines les plus passionnants de notre société
-        et l'intelligence artificielle (IA) est en train de changer la donne en
-        matière de méthodes d'apprentissage et de pédagogie. France Université
-        Numérique, qui se situe au croisement de l’enseignement supérieur et des
-        acteurs de l’innovation numérique et technologique, organise cet
-        événement pour faire un point sur ce sujet grâce à un groupe d'experts
-        de premier plan afin de discuter des dernières tendances et innovations.
-      </p>
-      <div className="mt-6 flex justify-center md:block">
-        <BookButton />
+  <div className="hero relative h-[770px]">
+    <div
+      className="mx-12 xl:max-w-7xl xl:mx-auto"
+      style={{ border: "0px blue solid" }}
+    >
+      <div
+        className={`font-bold inline-block px-8 relative top-[93px] ${gradient}`}
+      >
+        <h1 className="text-6xl">
+          La Conférence <br />
+          IA & Éducation
+        </h1>
+        <h2 className="text-3xl mt-20">8 & 9 Juin 2023</h2>
+        <h2 className="text-xl font-medium">au Dock B · Paris Pantin</h2>
+
+        <ul className="text-base font-semibold mt-6">
+          <li>Rencontres & Débats</li>
+          <li>Présentations & Tables rondes</li>
+          <li>Lightning talks</li>
+          <li>Prompt party</li>
+          <li>Roadmap IA pour l'ESR</li>
+        </ul>
+        <div className="mt-6">
+          <BookButton />
+        </div>
       </div>
-    </div>
-    <div className="basis-1/2">
-      <img
-        src="main.png"
-        alt="Logo de la conférence"
-        className="h-[300px] md:h-auto mx-auto md:m-0 object-cover"
-      />
     </div>
   </div>
 );
-
-const ContentSection = ({
-  children,
-  className,
-  ...props
-}: PropsWithChildren & HTMLAttributes<HTMLDivElement>) => {
-  return (
-    <div className={`flex justify-center py-16 ${padding} ${className}`}>
-      <div className="md:w-[720px] " {...props}>
-        {children}
-      </div>
-    </div>
-  );
-};
-
 const Content = () => (
   <>
-    <ContentSection>
-      <Part title="À propos">
-        <p className="text-gray-600">
-          Depuis quelque mois, l'arrivée de nouveaux outils basés sur l'usage de
-          l'intelligence artificielle pose question dans le domaine éducatif en
-          général et dans l’enseignement supérieur en particulier. Comment
-          fonctionnent-ils réellement ? Quels seront les usages qui peuvent en
-          découler dès maintenant ? Comment anticiper les transformations
-          éducatives à venir ? Quels sont leurs impacts sur un déroulé
-          pédagogique et sur les modalités d'examen ? Faut-il les interdire
-          purement et simplement ou doit-on les intégrer dans les activités de
-          formation ?
-          <br />
-          <br />
-          Toutes ces questions et bien d’autres encore ont pour ambition d’être
-          abordées avec sérénité et lucidité afin d’anticiper l’impact que va
-          avoir l’usage de l’Intelligence Artificielle (IA) dans l’enseignement
-          de demain.
-        </p>
-      </Part>
+    <ContentSection className="bg-white text-center">
+      <h3 className="text-2xl font-bold text-fun-orange-700">
+        L’intelligence artificielle bouleverse notre rapport à la connaissance
+        et aux autres
+      </h3>
+      <p className="text-xl font-semibold mt-4">
+        Cette innovation présente des enjeux techniques, éthiques, de
+        souveraineté et plus encore. <br />
+        <br />
+        Les questions sont posées.{" "}
+        <span className="text-fun-orange-700">Comment</span> doit réagir le
+        monde de l'éducation ?{" "}
+        <span className="text-fun-orange-700">Que faut-il</span> pour impulser
+        une dynamique ?{" "}
+        <span className="text-fun-orange-700">Pouvons-nous</span> penser ce
+        progrès ou sommes-nous condamnés à le subir ?
+        <br />
+        <br />
+        Les 8 et 9 Juin 2023 répondons à ces questions ensemble !
+      </p>
+      <div className="mt-20">
+        <BookButton />
+      </div>
     </ContentSection>
-    <ContentSection className="bg-fun-grey-100">
+    <ContentSection className="bg-fun-grey-200">
       <Part title="Le lieu">
         <a href="https://dockbpantin.com/" target="_blank" rel="noreferrer">
           <img
@@ -118,50 +102,87 @@ const Content = () => (
         </div>
       </Part>
     </ContentSection>
-    <ContentSection>
-      <Part title="Programme">
-        <h3 className="text-center font-semibold text-gray-400 text-xl">
-          Prochainement
-        </h3>
-      </Part>
-    </ContentSection>
-    <ContentSection className="bg-fun-grey-100">
-      <Part title="Qui sommes-nous ?">
-        <p className="text-gray-600">
-          France Université Numérique est un groupement d’intérêt public au
-          service de ses membres et partenaires. Nous fédérons un réseau
-          d'universités, d'écoles, d'instituts de recherche, d'agences
-          gouvernementales, d'entreprises edtech et de contributeurs qui se
-          consacrent à la construction de services numériques souverains pour
-          l'éducation.
+    <ContentSection className="bg-white text-center">
+      <LargeCard
+        title="Présentations & Tables Rondes"
+        imageUrl="watercolor.png"
+      >
+        <p className="font-light mb-8">
+          Venez écouter les experts du domaine sur la scène du Dock B. Ils
+          partagerons leur
+          <br /> vision et leurs expériences.
         </p>
-      </Part>
+        <SecondaryButton>Je veux participer</SecondaryButton>
+      </LargeCard>
+      <div className="flex gap-16 my-16">
+        <SmallCard
+          title="Prompt Party"
+          imageUrl="party.png"
+          imageAlt="Illustration de fête"
+        >
+          <p className="font-light mb-8">
+            Venez partager vos meilleurs prompts et apprendre des experts qui
+            seront présents sur place à travers des ateliers collaboratifs !
+          </p>
+          <SecondaryButton>Je veux participer</SecondaryButton>
+        </SmallCard>
+        <SmallCard title="Lightning Talks">
+          <p className="font-light mb-8">
+            Vous utilisez l’IA dans vos cours ou pour mieux apprendre ? Vous
+            avez fait un PoC en rapport avec l’IA ? On vous passe le micro
+            pendant 10 minutes !
+          </p>
+          <SecondaryButton>Proposer un talk</SecondaryButton>
+        </SmallCard>
+      </div>
+      <div className="flex gap-16 my-16">
+        <SmallCard title="Rencontres & Débats">
+          <p className="font-light mb-8">
+            Le Dock B en bord de Seine met  à disposition sa terrasse et ses
+            espaces conviviaux pour vous permettre d’échanger de nous
+            rencontrer.
+          </p>
+        </SmallCard>
+        <SmallCard title="Roadmap ESR">
+          <p className="font-light mb-8">
+            Définissons ensemble une ambition pour l’éducation de demain. De
+            quels services avons-nous besoin ? Et quels moyens devons nous
+            mobiliser pour relever ces défis ?
+          </p>
+        </SmallCard>
+      </div>
+      <LargeCard title="Posters & Stands">
+        <p className="font-light mb-8">
+          Des chercheurs présentant leurs travaux et des startups EdTech
+          présentant leur approche de l'IA et de l'éducation.
+        </p>
+      </LargeCard>
     </ContentSection>
-    <ContentSection>
-      <div className="mt-14 flex justify-center">
-        <BookButton />
+    <ContentSection className="bg-white">
+      <div className="flex justify-center gap-24 mb-10">
+        <img
+          src="logo.png"
+          alt="Logo de France Université Numérique"
+          className="h-24"
+        />
+        <img
+          src="logomin.png"
+          alt="Logo du Ministère de l'Enseignement Supérieur et de la Recherche"
+          className="h-24"
+        />
+      </div>
+      <div className="flex justify-center my-10">
+        <SecondaryButton className="mx-auto" href="#">
+          Devenir Sponsor
+        </SecondaryButton>
       </div>
     </ContentSection>
   </>
 );
 
-const BookButton = () => (
-  <Button href="https://weezevent.com/fr/" target="_blank">
-    Réserver ma place
-  </Button>
-);
-
 const Footer = () => (
-  <div className="mt-64 text-center">
-    <div className="flex justify-center absolute bottom-0 left-0 right-0 -z-10">
-      <img
-        src="footer.png"
-        alt="Illustration diverse"
-        className="footer__image object-cover h-[550px]"
-      />
-    </div>
-
-    <div className="bg-fun-blue-900 h-36 text-white flex flex-col items-center justify-center px-4">
+  <div className="text-center">
+    <div className="bg-fun-black-900 h-36 text-white flex flex-col items-center justify-center px-4">
       <div>
         <a
           href="https://www.france-universite-numerique.fr/"
@@ -186,11 +207,37 @@ const Footer = () => (
   </div>
 );
 
-const Part = (props: { title: string } & PropsWithChildren) => (
-  <div>
-    <h2 className="text-4xl font-extrabold text-center mb-8 text-fun-blue-500">
-      {props.title}
-    </h2>
-    {props.children}
-  </div>
+const Container = ({ children }: PropsWithChildren) => (
+  <div className="text-center lg:text-left">{children}</div>
+);
+
+const ContentSection = ({
+  children,
+  className,
+  ...props
+}: PropsWithChildren & HTMLAttributes<HTMLDivElement>) => {
+  return (
+    <div className={`flex justify-center py-16 ${padding} ${className}`}>
+      <div className="lg:w-[1024px] px-4 " {...props}>
+        {children}
+      </div>
+    </div>
+  );
+};
+
+const BookButton = () => (
+  <Button
+    href="https://weezevent.com/fr/"
+    target="_blank"
+    className="bg-gradient-to-r from-fun-orange-700 to-fun-orange-800"
+  >
+    Réserver ma place
+  </Button>
+);
+
+const SecondaryButton = ({
+  className,
+  ...props
+}: AnchorHTMLAttributes<HTMLAnchorElement>) => (
+  <Button className={`bg-fun-black-400 ${className}`} {...props} />
 );

@@ -12,6 +12,5 @@ module.exports = (phase, { defaultConfig }) => {
 
   return {
     ...nextConfig,
-    basePath: '/conf2023-landingpage',
   };
 };

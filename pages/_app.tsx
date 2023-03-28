@@ -15,8 +15,22 @@ export default ({ Component, pageProps }: AppProps) => {
       className={`${inter.variable} font-sans min-h-screen text-fun-black-500 relative`}
     >
       <Head>
-        <title>Conférence 2023 - FUN</title>
+        <title>IA & Éducation 2023 - La Conférence</title>
         <link rel="shortcut icon" href="logo.png" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta
+          property="og:title"
+          content="IA & Éducation 2023 - La Conférence"
+        />
+        <meta
+          property="og:description"
+          content="8 & 9 juin 2023 au Dock B · Paris Pantin"
+        />
+        <meta
+          name="og:image"
+          content="https://www.iaconference.education/header_gradient.webp"
+        />
       </Head>
       <Component {...pageProps} />
     </main>

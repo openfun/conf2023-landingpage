@@ -6,14 +6,14 @@ body {
     background-color: white;
 }
 
-.hero {
-    background-image: url("../public/header.jpg");
-
-    background-repeat: no-repeat;
-    background-position-x: -615px;
-    background-size: cover;
+@media (min-width: 1024px) {
+    .hero {
+        background-image: url("../public/header.webp");
+        background-repeat: no-repeat;
+        background-position-x: -615px;
+        background-size: cover;
+    }
 }
-
 @media (min-width: 1280px) {
     .hero {
         background-position-x: -570px;
@@ -26,7 +26,7 @@ body {
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1950px) {
     .hero {
         background-position-x: 0;
     }

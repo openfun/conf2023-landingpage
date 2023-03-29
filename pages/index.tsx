@@ -114,7 +114,7 @@ const Content = () => (
     <ContentSection className="bg-white text-center">
       <LargeCard
         title="Rencontres & débats"
-        imageUrl="watercolor.webp"
+        imageUrl="people.webp"
         imageAlt="Illustration aquarelle d'une femme et d'un robot"
       >
         <p className="font-light">

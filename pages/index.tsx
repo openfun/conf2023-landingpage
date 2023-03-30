@@ -34,8 +34,8 @@ const Hero = () => (
         className={`font-bold inline-block pt-4 pb-20 px-4 lg:pt-0 lg:pb-0 lg:px-8 relative lg:top-[93px] ${gradient}`}
       >
         <h1 className="text-4xl lg:text-6xl">
-          La Conférence <br />
-          IA & Éducation
+          La conférence <br />
+          IA & éducation
         </h1>
         <h2 className="text-xl lg:text-3xl mt-10 lg:mt-20">8 & 9 juin 2023</h2>
         <h2 className="text-base font-medium">au Dock B · Paris Pantin</h2>
@@ -43,7 +43,7 @@ const Hero = () => (
         <ul className="text-base font-semibold mt-6">
           <li>Rencontres & débats</li>
           <li>Présentations & tables rondes</li>
-          <li>Lightning talks</li>
+          <li>Présentations flash</li>
           <li>Prompt party</li>
         </ul>
         <div className="mt-6">
@@ -58,7 +58,7 @@ const Content = () => (
     <ContentSection className="bg-white text-center">
       <h3 className="text-xl lg:text-2xl font-bold text-fun-orange-700">
         L’intelligence artificielle bouleverse notre rapport à la connaissance
-        et aux autres
+        et nos interactions avec les autres.
       </h3>
       <p className="text-base lg:text-xl font-semibold mt-4">
         Cette innovation présente des enjeux techniques, éthiques, de

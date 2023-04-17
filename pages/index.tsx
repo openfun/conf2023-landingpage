@@ -227,8 +227,12 @@ const ContentSection = ({
 };
 
 const BookButton = () => (
-  <Button className="bg-gradient-to-r from-fun-orange-700 to-fun-orange-800 text-sm cursor-not-allowed opacity-50">
-    Réserver ma place ( bientôt )
+  <Button
+    className="bg-gradient-to-r from-fun-orange-700 to-fun-orange-800 text-sm"
+    target="_blank"
+    href="https://my.weezevent.com/la-conference-ia-education"
+  >
+    Réserver ma place
   </Button>
 );
 

@@ -1,11 +1,13 @@
 const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
 
+const withExportImages = require('next-export-optimize-images')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
 };
 
-module.exports = (phase, { defaultConfig }) => {
+module.exports = withExportImages((phase, { defaultConfig }) => {
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     return nextConfig;
   }
@@ -13,4 +15,4 @@ module.exports = (phase, { defaultConfig }) => {
   return {
     ...nextConfig,
   };
-};
+});

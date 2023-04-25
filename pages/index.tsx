@@ -1,6 +1,7 @@
 import { Button } from "components/Button";
 import { AnchorHTMLAttributes, HTMLAttributes, PropsWithChildren } from "react";
 import { Part } from "components/Part";
+import Image from "next/image";
 import { LargeCard, SmallCard } from "@/components/Cards";
 
 const gradient =
@@ -79,6 +80,7 @@ const Content = () => (
         <BookButton />
       </div>
     </ContentSection>
+    <Speakers />
     <ContentSection className="bg-fun-grey-200 text-center">
       <Part title="Le lieu">
         <a href="https://dockbpantin.com/" target="_blank" rel="noreferrer">
@@ -180,6 +182,132 @@ const Content = () => (
     </ContentSection>
   </>
 );
+
+const Speakers = () => {
+  const speakers = [
+    {
+      name: "Mireille",
+      lastName: "Brangé",
+      title:
+        "Coordinatrice nationale de la stratégie d'accélération pour l'enseignement et le numérique",
+      company: "Secrétariat général pour l'investissement",
+      imageUrl: "mireille_brange.jpeg",
+    },
+    {
+      name: "Jean-Michel",
+      lastName: "Bruguière",
+      title:
+        "Professeur à l'université Grenoble-Alpes, Avocat au barreau de Paris. Avocat of Counsel.",
+      imageUrl: "jean_michel_bruguiere.jpg",
+      company: "DDG",
+    },
+    {
+      name: "Luc",
+      lastName: "Julia",
+      title: "Chief Scientific Officer, Co-créateur de Siri.",
+      company: "Renault Group",
+      imageUrl: "luc_julia.jpeg",
+    },
+    {
+      name: "Laurent",
+      lastName: "Daudet",
+      title: "Directeur Général et co-fondateur",
+      company: "LightOn",
+      imageUrl: "laurent_daudet.jpg",
+    },
+    {
+      name: "Carlos",
+      lastName: "Muñoz Ferrandis",
+      title: "Tech & Regulatory Affairs Counsel",
+      company: "Hugging Face",
+      imageUrl: "carlos_munoz_ferrandis.jpeg",
+    },
+    {
+      name: "Alain",
+      lastName: "Goudey",
+      title: "Directeur Général Adjoint en charge du numérique",
+      company: "NEOMA Business School",
+      imageUrl: "alain_goudey.jpeg",
+    },
+    {
+      name: "Pierre-Carl",
+      lastName: "Langlais",
+      title: "Directeur de la recherche",
+      company: "OpSci",
+      imageUrl: "pierre_carl_langlais.jpeg",
+    },
+    {
+      name: "Alexis",
+      lastName: "Léauter",
+      title: "Ingénieur expert",
+      imageUrl: "alexis_leautier.jpg",
+      company: "CNIL",
+    },
+    {
+      name: "Arthur",
+      lastName: "Millerand",
+      title: "Associé",
+      company: "Parallel Avocats",
+      imageUrl: "arthur_millerand.png",
+    },
+    {
+      name: "Tristan",
+      lastName: "Nitot",
+      title: "Expert numérique responsable",
+      imageUrl: "tristan_nitot.jpeg",
+    },
+    {
+      name: "Gilles",
+      lastName: "Roussel",
+      title:
+        "Président de l’Université Gustave Eiffel, Référent numérique à France Universités",
+      imageUrl: "gilles_roussel.jpg",
+    },
+  ];
+  speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));
+  return (
+    <ContentSection className="bg-white">
+      <Part title="Les intervenants">
+        <div className="flex flex-wrap justify-center gap-10">
+          {speakers.map((speaker, index) => (
+            <Speaker key={index} speaker={speaker} />
+          ))}
+        </div>
+      </Part>
+    </ContentSection>
+  );
+};
+
+const Speaker = ({
+  speaker,
+}: {
+  speaker: {
+    name: string;
+    lastName: string;
+    title: string;
+    imageUrl: string;
+    company?: string;
+  };
+}) => {
+  return (
+    <div className="flex flex-col items-center gap-2 w-[100px] md:w-[160px] text-center">
+      <Image
+        src={"/speakers/" + speaker.imageUrl}
+        alt={"Photo de " + speaker.name}
+        width={160}
+        height={160}
+        className="rounded-full h-[100px] w-[100px] md:h-[160px] md:w-[160px] object-cover"
+      />
+      <div className="font-bold text-lg">
+        {speaker.name} {speaker.lastName}
+      </div>
+      <div className="font-light text-xs">{speaker.title}</div>
+      {speaker.company && (
+        <div className="font-light text-xs italic">{speaker.company}</div>
+      )}
+    </div>
+  );
+};
 
 const Footer = () => (
   <div className="text-center">

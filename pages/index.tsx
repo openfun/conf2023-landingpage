@@ -263,6 +263,42 @@ const Speakers = () => {
         "Président de l’Université Gustave Eiffel, Référent numérique à France Universités",
       imageUrl: "gilles_roussel.jpg",
     },
+    {
+      name: "Raja",
+      lastName: "Chatila",
+      title: "Professeur émérite",
+      company: "Sorbonne Université",
+      imageUrl: "raja_chatila.jpeg",
+    },
+    {
+      name: "Giada",
+      lastName: "Pistilli",
+      title: "Responsable de l’éthique",
+      company: "Hugging Face",
+      imageUrl: "giada_pistilli.jpg",
+    },
+    {
+      name: "Vanda",
+      lastName: "Luengo",
+      title: "Professeure en informatique",
+      company: "Laboratoire LIP6, Sorbonne Université",
+      imageUrl: "vanda_luengo.png",
+    },
+    {
+      name: "Catherine",
+      lastName: "Tessier",
+      title:
+        "Chercheuse et Référente intégrité scientifique et éthique de la recherche",
+      company: "ONERA - The French Aerospace Lab",
+      imageUrl: "catherine_tessier.png",
+    },
+    {
+      name: "Sophie",
+      lastName: "Pene",
+      title: "Professeure émérite",
+      company: "Université Paris Cité",
+      imageUrl: "sophie_pene.png",
+    },
   ];
   speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));
   return (
@@ -290,7 +326,7 @@ const Speaker = ({
   };
 }) => {
   return (
-    <div className="flex flex-col items-center gap-2 w-[100px] md:w-[160px] text-center">
+    <div className="flex flex-col items-center gap-2 w-[100px] md:w-[180px] text-center">
       <Image
         src={"/speakers/" + speaker.imageUrl}
         alt={"Photo de " + speaker.name}

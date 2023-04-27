@@ -304,7 +304,7 @@ const Speakers = () => {
   return (
     <ContentSection className="bg-white">
       <Part title="Les intervenants">
-        <div className="flex flex-wrap justify-center gap-10">
+        <div className="flex flex-wrap justify-center">
           {speakers.map((speaker, index) => (
             <Speaker key={index} speaker={speaker} />
           ))}
@@ -326,7 +326,7 @@ const Speaker = ({
   };
 }) => {
   return (
-    <div className="flex flex-col items-center gap-2 w-[100px] md:w-[180px] text-center">
+    <div className="flex flex-col items-center gap-2 w-1/2 md:w-1/4 text-center p-2 md:p-4">
       <Image
         src={"/speakers/" + speaker.imageUrl}
         alt={"Photo de " + speaker.name}

@@ -197,15 +197,14 @@ const Speakers = () => {
       name: "Jean-Michel",
       lastName: "Bruguière",
       title:
-        "Professeur à l'université Grenoble-Alpes, Avocat au barreau de Paris. Avocat of Counsel.",
+        "Professeur à l'université Grenoble-Alpes, Directeur du Centre universitaire d’enseignement et de recherche en propriété intellectuelle, Avocat of Counsel au cabinet Deprez Guignot & Associés",
       imageUrl: "jean_michel_bruguiere.jpg",
-      company: "DDG",
     },
     {
       name: "Luc",
       lastName: "Julia",
-      title: "Chief Scientific Officer, Co-créateur de Siri.",
-      company: "Renault Group",
+      title:
+        "Co-créateur de Siri avec Adam Sawer et Chief Scientific Officer de Renault Group",
       imageUrl: "luc_julia.jpeg",
     },
     {
@@ -238,7 +237,7 @@ const Speakers = () => {
     },
     {
       name: "Alexis",
-      lastName: "Léauter",
+      lastName: "Léautier",
       title: "Ingénieur expert",
       imageUrl: "alexis_leautier.jpg",
       company: "CNIL",
@@ -246,14 +245,15 @@ const Speakers = () => {
     {
       name: "Arthur",
       lastName: "Millerand",
-      title: "Associé",
-      company: "Parallel Avocats",
+      title:
+        "Avocat associé du cabinet Parallel Avocats, expert du numérique et des nouvelles technologies",
       imageUrl: "arthur_millerand.png",
     },
     {
       name: "Tristan",
       lastName: "Nitot",
       title: "Expert numérique responsable",
+      company: "OCTO Technology",
       imageUrl: "tristan_nitot.jpeg",
     },
     {
@@ -266,8 +266,8 @@ const Speakers = () => {
     {
       name: "Raja",
       lastName: "Chatila",
-      title: "Professeur émérite",
-      company: "Sorbonne Université",
+      title:
+        "Professeur émérite d'intelligence artificielle et d'éthique des technologies à Sorbonne Université, Membre du Comité national pilote d'éthique du numérique (CNPEN)",
       imageUrl: "raja_chatila.jpeg",
     },
     {
@@ -288,14 +288,14 @@ const Speakers = () => {
       name: "Catherine",
       lastName: "Tessier",
       title:
-        "Chercheuse et Référente intégrité scientifique et éthique de la recherche",
-      company: "ONERA - The French Aerospace Lab",
+        "Chercheuse et Référente intégrité scientifique et éthique de la recherche (ONERA - The French Aerospace Lab), Membre du Comité national pilote d'éthique du numérique (CNPEN)",
       imageUrl: "catherine_tessier.png",
     },
     {
       name: "Sophie",
-      lastName: "Pene",
-      title: "Professeure émérite",
+      lastName: "Pène",
+      title:
+        "Professeur émérite en sciences de l'information et de la communication, ancienne membre et vice-présidente du Conseil national du numérique",
       company: "Université Paris Cité",
       imageUrl: "sophie_pene.png",
     },

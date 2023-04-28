@@ -205,7 +205,7 @@ const Speakers = () => {
       lastName: "Julia",
       title:
         "Co-créateur de Siri avec Adam Sawer et Chief Scientific Officer de Renault Group",
-      imageUrl: "luc_julia.jpeg",
+      imageUrl: "luc_julia.jpg",
     },
     {
       name: "Laurent",
@@ -295,9 +295,29 @@ const Speakers = () => {
       name: "Sophie",
       lastName: "Pène",
       title:
-        "Professeur émérite en sciences de l'information et de la communication, ancienne membre et vice-présidente du Conseil national du numérique",
+        "Professeur émérite en sciences de l'information et de la communication, ancienne vice-présidente du Conseil national du numérique",
       company: "Université Paris Cité",
       imageUrl: "sophie_pene.png",
+    },
+    {
+      name: "Jean-Louis",
+      lastName: "Quéguiner",
+      title: "Fondateur de Gladia.io ex-directeur IA et big data d'OVH",
+      imageUrl: "jean_louis_queguiner.jpeg",
+    },
+    {
+      name: "Arlène",
+      lastName: "Botokro",
+      title: "Key Account Manager",
+      company: "Wooclap",
+      imageUrl: "arlene_botokro.jpeg",
+    },
+    {
+      name: "Fabrice",
+      lastName: "Epelboin",
+      title:
+        "Entrepreneur français, spécialiste des médias sociaux et du web social",
+      imageUrl: "fabrice_epelboin.jpeg",
     },
   ];
   speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));

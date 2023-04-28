@@ -1,9 +1,8 @@
 import { Button } from "components/Button";
 import { AnchorHTMLAttributes, HTMLAttributes, PropsWithChildren } from "react";
 import { Part } from "components/Part";
-import Image from "next/image";
-import { Speakers } from "pages/speakers";
-import { Talks } from "pages/talks";
+import { Speakers } from "components/speakers";
+import { Talks } from "components/talks";
 import { LargeCard, SmallCard } from "@/components/Cards";
 
 const gradient =

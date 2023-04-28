@@ -1,13 +1,13 @@
 import { Part } from "components/Part";
 import { ContentSection } from "pages/index";
-import { LUC_JULIA } from "pages/speakers";
+import { LUC_JULIA } from "components/speakers";
 import Image from "next/image";
 
 export const Talks = () => {
   return (
     <ContentSection className="bg-white">
       <div className="mb-16">
-        <KeynoteV2 />
+        <Keynote />
       </div>
       <RoundTables />
       <div className="pt-16">
@@ -18,31 +18,6 @@ export const Talks = () => {
 };
 
 const Keynote = () => {
-  return (
-    <div className="bg-fun-grey-200 p-10 text-center">
-      <div className="font-bold text-3xl md:text-3xl text-fun-grey-700">
-        L'intelligence artificielle n'existe pas.
-      </div>
-      <div className="font-light text-xs flex items-center justify-center gap-4 mt-4">
-        <Image
-          src={"/speakers/" + LUC_JULIA.imageUrl}
-          alt={"Photo de " + LUC_JULIA.name + " " + LUC_JULIA.lastName}
-          width={60}
-          height={60}
-          className="rounded-full h-[60px] w-[60px] object-cover"
-        />
-        <div>
-          Présentation par{" "}
-          <span className="font-bold whitespace-nowrap">
-            {LUC_JULIA.name} {LUC_JULIA.lastName}
-          </span>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const KeynoteV2 = () => {
   return (
     <>
       <div className="hidden md:flex bg-fun-grey-200 p-10 items-center gap-8 text-left">

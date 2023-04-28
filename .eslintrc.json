@@ -81,7 +81,8 @@
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
     "react/style-prop-object": ["error", { "allow": ["FormattedNumber"] }],
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "@typescript-eslint/naming-convention": "off"
   },
   "settings": {
     "polyfills": ["fetch", "Promise"],

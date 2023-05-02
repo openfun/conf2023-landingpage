@@ -42,7 +42,7 @@ export default ({ Component, pageProps }: AppProps) => {
         onLoad={() => {
           pa.setConfiguration("site", 637174);
           pa.setConfiguration("collectDomain", "https://logs1412.xiti.com");
-          pa.privacy.setMode("optout");
+          pa.privacy.setMode("exempt");
           _paq.push(["sendEvent", "page.display", { page: "index" }]);
         }}
       />

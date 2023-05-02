@@ -140,6 +140,20 @@ export const Speakers = () => {
         "Entrepreneur français, spécialiste des médias sociaux et du web social",
       imageUrl: "fabrice_epelboin.jpeg",
     },
+    {
+      name: "Fred",
+      lastName: "Dixon",
+      title: "Co-fondateur de BigBlueButton",
+      imageUrl: "fred_dixon.jpeg",
+    },
+    // {
+    //   name: "Jean-Marc",
+    //   lastName: "Deltorn",
+    //   title:
+    //     "Chercheur au Centre d’études internationales de la propriété intellectuelle (CEIPI), responsable scientifique du DU Intelligence artificielle et propriété intellectuelle",
+    //   company: "Université de Strasbourg",
+    //   imageUrl: "jean_marc_deltorn.jpeg",
+    // },
   ];
   speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));
   return (

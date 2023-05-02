@@ -3,6 +3,7 @@ import { AnchorHTMLAttributes, HTMLAttributes, PropsWithChildren } from "react";
 import { Part } from "components/Part";
 import { Speakers } from "components/speakers";
 import { Talks } from "components/talks";
+import { Sponsors } from "components/sponsors";
 import { LargeCard, SmallCard } from "@/components/Cards";
 
 const gradient =
@@ -83,6 +84,7 @@ const Content = () => (
     </ContentSection>
     <Speakers />
     <Talks />
+    <Sponsors />
     <ContentSection className="bg-fun-grey-200 text-center">
       <Part title="Le lieu">
         <a href="https://dockbpantin.com/" target="_blank" rel="noreferrer">

@@ -7,6 +7,7 @@ export const Sponsors = () => (
     <Part title="Avec la participation de">
       <div className="flex justify-center">
         <div className="w-full md:w-1/2 bg-fun-grey-200 p-10">
+          <div className="font-bold text-center mb-10">Paris Digital Lab</div>
           <Image
             src="/sponsors/cs.png"
             alt="Logo de CentraleSupélec"

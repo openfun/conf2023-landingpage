@@ -118,7 +118,7 @@ export const Speakers = () => {
       title:
         "Professeur émérite en sciences de l'information et de la communication, ancienne vice-présidente du Conseil national du numérique",
       company: "Université Paris Cité",
-      imageUrl: "sophie_pene.png",
+      imageUrl: "sophie_pene.jpg",
     },
     {
       name: "Jean-Louis",
@@ -146,14 +146,21 @@ export const Speakers = () => {
       title: "Co-fondateur de BigBlueButton",
       imageUrl: "fred_dixon.jpeg",
     },
-    // {
-    //   name: "Jean-Marc",
-    //   lastName: "Deltorn",
-    //   title:
-    //     "Chercheur au Centre d’études internationales de la propriété intellectuelle (CEIPI), responsable scientifique du DU Intelligence artificielle et propriété intellectuelle",
-    //   company: "Université de Strasbourg",
-    //   imageUrl: "jean_marc_deltorn.jpeg",
-    // },
+    {
+      name: "Jean-Marc",
+      lastName: "Deltorn",
+      title:
+        "Chercheur au Centre d’études internationales de la propriété intellectuelle (CEIPI), responsable scientifique du DU Intelligence artificielle et propriété intellectuelle",
+      company: "Université de Strasbourg",
+      imageUrl: "jean_marc_deltorn.jpeg",
+    },
+    {
+      name: "Wassym",
+      lastName: "Kalouache",
+      title: "Co-fondateur et président",
+      company: "Corolair",
+      imageUrl: "wassym_kalouache.jpeg",
+    },
   ];
   speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));
   return (

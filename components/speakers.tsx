@@ -116,7 +116,7 @@ export const Speakers = () => {
       name: "Sophie",
       lastName: "Pène",
       title:
-        "Professeur émérite en sciences de l'information et de la communication, ancienne vice-présidente du Conseil national du numérique",
+        "Professeur émérite en sciences de l'information et de la communication, ancienne vice-présidente du Conseil national du numérique, chercheuse au laboratoire DICEN-IdF",
       company: "Université Paris Cité",
       imageUrl: "sophie_pene.jpg",
     },
@@ -127,11 +127,11 @@ export const Speakers = () => {
       imageUrl: "jean_louis_queguiner.jpeg",
     },
     {
-      name: "Arlène",
-      lastName: "Botokro",
-      title: "Key Account Manager",
+      name: "Wandrille",
+      lastName: "Bonnet",
+      title: "Directeur Produit",
       company: "Wooclap",
-      imageUrl: "arlene_botokro.jpeg",
+      imageUrl: "wandrille_bonnet.jpg",
     },
     {
       name: "Fabrice",
@@ -160,6 +160,14 @@ export const Speakers = () => {
       title: "Co-fondateur et président",
       company: "Corolair",
       imageUrl: "wassym_kalouache.jpeg",
+    },
+    {
+      name: "Bernard",
+      lastName: "Quinio",
+      title:
+        "Directeur du service de formation continue et d'alternance et enseignant chercheur",
+      company: "Université Paris Nanterre",
+      imageUrl: "bernard_quinio.jpg",
     },
   ];
   speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));

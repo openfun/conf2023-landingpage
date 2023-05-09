@@ -116,7 +116,7 @@ export const Speakers = () => {
       name: "Sophie",
       lastName: "Pène",
       title:
-        "Professeur émérite en sciences de l'information et de la communication, ancienne vice-présidente du Conseil national du numérique, chercheuse au laboratoire DICEN-IdF",
+        "Professeure émérite en sciences de l'information et de la communication, ancienne vice-présidente du Conseil national du numérique, chercheuse au laboratoire DICEN-IdF",
       company: "Université Paris Cité",
       imageUrl: "sophie_pene.jpg",
     },
@@ -168,6 +168,13 @@ export const Speakers = () => {
         "Directeur du service de formation continue et d'alternance et enseignant chercheur",
       company: "Université Paris Nanterre",
       imageUrl: "bernard_quinio.jpg",
+    },
+    {
+      name: "David",
+      lastName: "Cassagne",
+      title:
+        "Vice-Président délégué au Numérique pour la Formation à l'Université de Montpellier et Président de France Université Numérique",
+      imageUrl: "david_cassagne.jpg",
     },
   ];
   speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));

@@ -2,6 +2,7 @@ import { Part } from "components/Part";
 import { ContentSection } from "pages/index";
 import { LUC_JULIA } from "components/speakers";
 import Image from "next/image";
+import { Agenda } from "components/agenda";
 
 export const Talks = () => {
   return (
@@ -9,10 +10,11 @@ export const Talks = () => {
       <div className="mb-16">
         <Keynote />
       </div>
-      <RoundTables />
-      <div className="pt-16">
-        <SimpleTalks />
-      </div>
+      {/* <RoundTables /> */}
+      {/* <div className="pt-16"> */}
+      {/*  <SimpleTalks /> */}
+      {/* </div> */}
+      <Agenda />
     </ContentSection>
   );
 };

@@ -6,16 +6,18 @@ import { Agenda } from "components/agenda";
 
 export const Talks = () => {
   return (
-    <ContentSection className="bg-white">
-      <div className="mb-16">
-        <Keynote />
-      </div>
-      {/* <RoundTables /> */}
-      {/* <div className="pt-16"> */}
-      {/*  <SimpleTalks /> */}
-      {/* </div> */}
+    <>
+      <ContentSection className="bg-white">
+        <div className="mb-16">
+          <Keynote />
+        </div>
+        {/* <RoundTables /> */}
+        {/* <div className="pt-16"> */}
+        {/*  <SimpleTalks /> */}
+        {/* </div> */}
+      </ContentSection>
       <Agenda />
-    </ContentSection>
+    </>
   );
 };
 

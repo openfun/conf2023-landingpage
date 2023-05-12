@@ -38,7 +38,7 @@ export const Speakers = () => {
     {
       name: "Carlos",
       lastName: "Muñoz Ferrandis",
-      title: "Tech & Regulatory Affairs Counsel",
+      title: "Avocat en affaires techniques et règlementaires",
       company: "Hugging Face",
       imageUrl: "carlos_munoz_ferrandis.jpeg",
     },
@@ -175,6 +175,27 @@ export const Speakers = () => {
       title:
         "Vice-Président délégué au Numérique pour la Formation à l'Université de Montpellier et Président de France Université Numérique",
       imageUrl: "david_cassagne.jpg",
+    },
+    {
+      name: "Marie",
+      lastName: "Soulez",
+      title:
+        "Avocate du cabinet Lexing Alain Bensoussan Avocats, spécialisée en droit de la propriété intellectuelle, directrice du département contentieux de la propriété intellectuelle",
+      imageUrl: "marie_soulez.jpg",
+    },
+    {
+      name: "Erevan",
+      lastName: "Malroux",
+      title: "Juriste au service des affaires économiques",
+      company: "CNIL",
+      imageUrl: "erevan_malroux.png",
+    },
+    {
+      name: "Bruno",
+      lastName: "Sportisse",
+      title: "Directeur Général",
+      company: "INRIA",
+      imageUrl: "bruno_sportisse.jpeg",
     },
   ];
   speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));

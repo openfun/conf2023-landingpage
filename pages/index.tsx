@@ -6,6 +6,7 @@ import { Talks } from "components/talks";
 import { Sponsors } from "components/sponsors";
 import { LargeCard, SmallCard } from "@/components/Cards";
 
+declare let _paq: any;
 const gradient =
   "bg-clip-text bg-gradient-to-r from-white to-fun-orange-500 text-transparent";
 
@@ -237,8 +238,8 @@ const BookButton = () => (
     className="bg-gradient-to-r from-fun-orange-700 to-fun-orange-800 text-sm"
     target="_blank"
     href="https://my.weezevent.com/la-conference-ia-education"
-    onClick={(e) => {
-      console.log("CLICK");
+    onClick={() => {
+      _paq?.push(["sendEvent", "click.action", { page: "book" }]);
     }}
   >
     Réserver ma place

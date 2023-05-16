@@ -193,7 +193,7 @@ export const Speakers = () => {
     {
       name: "Bruno",
       lastName: "Sportisse",
-      title: "Directeur Général",
+      title: "Président-directeur général",
       company: "INRIA",
       imageUrl: "bruno_sportisse.jpeg",
     },

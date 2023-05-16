@@ -110,7 +110,7 @@ Table ronde animée par **Marie Soulez**, Avocate du cabinet Lexing Alain Bensou
 Table ronde avec
 - **Mireille Brangé**, Coordinatrice nationale de la stratégie d'accélération pour l'enseignement et le numérique au Secrétariat général pour l'investissement  
 - **Gilles Roussel**, Président de l’Université Gustave Eiffel, Référent numérique à France Universités         
-- **Bruno Sportisse**, Directeur Général d'INRIA
+- **Bruno Sportisse**, Président-directeur général d'INRIA
     `,
     start: "14:00",
     end: "15:30",

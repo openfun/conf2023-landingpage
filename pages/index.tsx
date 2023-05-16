@@ -237,6 +237,9 @@ const BookButton = () => (
     className="bg-gradient-to-r from-fun-orange-700 to-fun-orange-800 text-sm"
     target="_blank"
     href="https://my.weezevent.com/la-conference-ia-education"
+    onClick={(e) => {
+      console.log("CLICK");
+    }}
   >
     Réserver ma place
   </Button>

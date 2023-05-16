@@ -197,6 +197,13 @@ export const Speakers = () => {
       company: "INRIA",
       imageUrl: "bruno_sportisse.jpeg",
     },
+    {
+      name: "Jean-François",
+      lastName: "Caulier",
+      title: "Vice président délégué stratégie et innovations numériques",
+      company: "Université Paris 1 Panthéon Sorbonne",
+      imageUrl: "jean_françois_caulier.jpg",
+    },
   ];
   speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));
   return (

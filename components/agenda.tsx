@@ -189,11 +189,11 @@ Table ronde avec
     tags: [TAG_ESQUIVE],
   },
   {
-    title: "Retours d'expériences d'INRIA autour de l'IA",
+    title: "Retours d'expériences d'Inria autour de l'IA",
     description: `
-- Soutien des enseignants de lycées à l'usage éclairé et éthique des technologies et systèmes d'IA pour l'éducation, **Bénédicte Cardon** (INRIA) et **Azim Roussanaly** (LORIA)
-- Retour MOOC INRIA Intelligence artificielle avec intelligence, **Aurélie Lagarrigue** (INRIA)
-- Retour MOOC INRIA SciKit Learn, **David Arturo Amor Quiroz** (INRIA)
+- Retour Mooc Intelligence artificielle avec intelligence - **Aurélie Lagarrigue** (Ingénieure pédagogique - Inria) et **Thierry Viéville** (Chercheur en neurosciences computationelles - Inria)
+- Décrypter les outils d'IA - Projet Erasmus+ AI4T Intelligence Artificielle pour et par les enseignants, **Bénédicte Cardon** & **Marie Collin** (Ingénieures pédagogiques - Inria) et **Azim Roussanaly** (Enseignant-chercheur en informatique - LORIA)
+- Retour Mooc Machine learning in Python with scikit-learn, **David Arturo Amor Quiroz** (Machine Learning Engineer - Inria)
     `,
     start: "14:00",
     end: "15:30",

@@ -35,6 +35,11 @@ export default ({ Component, pageProps }: AppProps) => {
           name="og:image"
           content="https://www.iaconference.education/header_gradient.webp"
         />
+        <meta
+          name="image"
+          property="og:image"
+          content="https://www.iaconference.education/header_gradient.webp"
+        />
       </Head>
       <Script
         type="text/javascript"

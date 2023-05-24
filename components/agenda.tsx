@@ -107,7 +107,7 @@ Table ronde animée par **Marie Soulez**, Avocate du cabinet Lexing Alain Bensou
   {
     title: "Quelle feuille de route IA pour l'enseignement supérieur ?",
     description: ` 
-Table ronde avec
+Table ronde animée par **Sophie Pène**, Professeure émérite en sciences de l'information et de la communication à Université Paris Cité, ancienne vice-présidente du Conseil national du numérique
 - **Mireille Brangé**, Coordinatrice nationale de la stratégie d'accélération pour l'enseignement et le numérique au Secrétariat général pour l'investissement  
 - **Gilles Roussel**, Président de l’Université Gustave Eiffel, Référent numérique à France Universités         
 - **Bruno Sportisse**, Président-directeur général d'Inria
@@ -129,7 +129,7 @@ const AGENDA_THURSDAY: AgendaSlot[] = [
   {
     title: "L’intelligence artificielle n’existe pas",
     description:
-      "**Luc Julia**, Co-créateur de Siri avec Adam Sawer et Chief Scientific Officer de Renault Group",
+      "**Luc Julia**, Co-créateur de Siri avec Adam Cheyer et Chief Scientific Officer de Renault Group",
     start: "09:30",
     end: "10:30",
     tags: [TAG_ESQUIVE],
@@ -160,7 +160,7 @@ const AGENDA_THURSDAY: AgendaSlot[] = [
     description: `
 - Démystifier l'IA générative par **Laurent Daudet**, Directeur Général et co-fondateur de LightOn
 - La transcription automatique en 99 langues as a service par **Jean-Louis Quéguiner**, fondateur de Gladia.io & ex-directeur IA et Big Data d'OVH
-- Table ronde
+- Table ronde animée par **Renaud Monnet**, Directeur du Digital Institute de CentraleSupélec, avec **Laurent Daudet**, **Jean-Louis Quéguiner**, **Fabrice Epelboin** et **Robert Vesoul**, PDG & Co-fondateur d'Illuin Technology
     `,
     start: "11:00",
     end: "12:30",
@@ -178,7 +178,7 @@ const AGENDA_THURSDAY: AgendaSlot[] = [
     title:
       "Quels sont les enjeux éthiques à l'utilisation de l'IA dans l'éducation ?",
     description: `
-Table ronde avec
+Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques et transverses à l'ANSSI, avec
 - **Raja Chatila**, Professeur émérite d'intelligence artificielle et d'éthique des technologies à Sorbonne Université, Membre du Comité national pilote d'éthique du numérique (CNPEN)
 - **Alexis Leautier**, Ingénieur expert, CNIL 
 - **Giada Pistilli**, Responsable de l'éthique, Hugging Face 
@@ -212,7 +212,7 @@ Table ronde avec
       "L'IA générative est-elle compatible avec le changement climatique ?",
     description: `
 - Présentation par **Tristan Nitot**, Expert numérique responsable à OCTO technology  
-- Suivie d'une  table ronde animée par **Samuel Paccoud**, Responsable technique de France Université Numérique
+- Table ronde, animée par **Samuel Paccoud**, Responsable technique de France Université Numérique avec **Tristan Nitot** et **Pierre Beyssac**, PDG et fondateur d'Eriomem & co-fondateur de Gandi
     `,
     start: "16:00",
     end: "17:30",

@@ -6,7 +6,7 @@ export const LUC_JULIA = {
   name: "Luc",
   lastName: "Julia",
   title:
-    "Co-créateur de Siri avec Adam Sawer et Chief Scientific Officer de Renault Group",
+    "Co-créateur de Siri avec Adam Cheyer et Chief Scientific Officer de Renault Group",
   imageUrl: "luc_julia.jpg",
 };
 
@@ -203,6 +203,20 @@ export const Speakers = () => {
       title: "Vice président délégué stratégie et innovations numériques",
       company: "Université Paris 1 Panthéon Sorbonne",
       imageUrl: "jean_françois_caulier.jpg",
+    },
+    {
+      name: "Marc",
+      lastName: "Oddon",
+      title:
+        "Vice Président formation continue, apprentissage et insertion professionnelle",
+      company: "Université Grenoble Alpes",
+      imageUrl: "marc_oddon.jpg",
+    },
+    {
+      name: "Pierre",
+      lastName: "Beyssac",
+      title: "PDG et fondateur d'Eriomem & co-fondateur de Gandi",
+      imageUrl: "pierre_beyssac.jpg",
     },
   ];
   speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));

@@ -26,19 +26,21 @@ const TAG_CARRE = {
   name: "Salle Le Carré",
   color: "bg-green-700",
 };
-const TAG_CYBER = {
-  name: "Cybersphère",
-  color: "bg-violet-700",
-};
+// const TAG_CYBER = {
+//   name: "Cybersphère",
+//   color: "bg-violet-700",
+// };
 
 const AGENDA_FRIDAY: AgendaSlot[] = [
   {
     title: "Quelle transformation pragmatique des outils pédagogiques ?",
     description: `
-- **Hervé Luga**, Vice Président Numérique de l'Université Toulouse
-- BigBlueButton :  VR classrooms using AI, **Fred Dixon**, Co-fondateur de BigBlueButton
+- Introduction et animation par **Hervé Luga**, Vice Président Numérique de l'Université Toulouse
 - Wooclap : Créez des QCM & flashcards en quelques secondes grâce à Quiz Wizard, **Wandrille Bonnet**, Directeur Produit chez Wooclap
-- Corolair : génération de quiz pour la formation en ligne, **Wassym Kalouache**, Co-fondateur et président de Corolair    
+- Corolair : génération de quiz pour la formation en ligne, **Wassym Kalouache**, Co-fondateur et président de Corolair
+- BigBlueButton: Increasing formative assessment in Virtual Classrooms using AI, **Fred Dixon** , Co-founder of BigBlueButton
+- La transcription automatique en 99 langues as a service par **Jean-Louis Quéguiner**, fondateur de Gladia.io & ex-directeur IA et Big Data d'OVH
+- Enrichissement automatique de vidéos avec l'IA par le Paris Digital Lab de CentraleSupélec : **Antoine Vaglio**, **Bahhad Mohammed**, **Liwei Sun**, **Pierre-Louis Veyrenc**    
     `,
     start: "09:00",
     end: "10:30",
@@ -46,19 +48,18 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
   },
   {
     title:
-      "Démonstrations par le Paris Digital Lab de CentraleSupélec de preuves de concepts autour de l'utilisation des LLM dans un contexte éducatif",
+      "Cas pratiques d'utilisation de l'apprentissage machine dans l'education",
     description: `
-- **Antoine Vaglio** 
-- **Bahhad Mohammed**
-- **Liwei Sun**
-- **Pierre-Louis Veyrenc**    
+Animation par **Julien Maupetit**, Chief Data Officer de France Université Numérique
+- Personnalisation des apprentissages avec l’IA : exemple d’Adaptiv’Langue/EvidenceB, par **Catherine de Vulpillières**, GM & CIO cofondatrice EvidenceB
+- A4LL, un système de learning analytics pour l'apprentissage du langage, par **Rémi Venant**, Enseignant-Chercheur en Informatique à Le Mans Université    
     `,
     start: "09:00",
     end: "10:30",
     tags: [TAG_CARRE],
   },
   {
-    title: "Pause café & stands",
+    title: "Pause café & stands, prompt party",
     description: "",
     start: "10:30",
     end: "11:00",
@@ -83,18 +84,12 @@ Table ronde animée par **Marie Soulez**, Avocate du cabinet Lexing Alain Bensou
     description: `
 - **Claire Doz**, Enseignante de lettres à la Cité scolaire Paul Valéry : Retours d'expériences sur l'utilisation de l'IA en cours de Français 
 - **Bernard Quinio**, Directeur du Service Formation Continue & Alternance (SFCA) et enseignant chercheur à l' Université Paris Nanterre - Comment l'IA nous oblige à repenser l'enseignement dans le supérieur ? 
-- **Serge Miranda**, Professeur Emérite d'Informatique à l' Université Côte d'Azur  - IA générative et 3 dimensions de l'enseignement numérique du futur    
+- **Serge Miranda**, Professeur Emérite d'Informatique à l' Université Côte d'Azur  - IA générative et 3 dimensions de l'enseignement numérique du futur
+- **Jean-Francois Caulier**, Vice président délégué stratégie et innovations numériques à l'université Paris 1 Panthéon Sorbonne - Comment utiliser les outils d'IA pour améliorer les cours de maths à la session    
     `,
     start: "11:00",
     end: "12:30",
     tags: [TAG_CARRE],
-  },
-  {
-    title: "Prompt Party",
-    description: `Par l'**Inria**`,
-    start: "11:00",
-    end: "12:30",
-    tags: [TAG_CYBER],
   },
   {
     title: "Pause Déjeuner",
@@ -135,7 +130,7 @@ const AGENDA_THURSDAY: AgendaSlot[] = [
     tags: [TAG_ESQUIVE],
   },
   {
-    title: "Pause café & stands",
+    title: "Pause café & stands, prompt party",
     description: "",
     start: "10:30",
     end: "11:00",
@@ -159,8 +154,7 @@ const AGENDA_THURSDAY: AgendaSlot[] = [
     title: "LLM souverains : quelles alternatives à ChatGPT ?",
     description: `
 - Démystifier l'IA générative par **Laurent Daudet**, Directeur Général et co-fondateur de LightOn
-- La transcription automatique en 99 langues as a service par **Jean-Louis Quéguiner**, fondateur de Gladia.io & ex-directeur IA et Big Data d'OVH
-- Table ronde animée par **Renaud Monnet**, Directeur du Digital Institute de CentraleSupélec, avec **Laurent Daudet**, **Jean-Louis Quéguiner**, **Fabrice Epelboin** et **Robert Vesoul**, PDG & Co-fondateur d'Illuin Technology
+- Table ronde animée par **Renaud Monnet**, Directeur du Digital Institute de CentraleSupélec, avec **Laurent Daudet**, **Fabrice Epelboin**, Entrepreneur français, spécialiste des médias sociaux et du web social, **Jean-Louis Quéguiner**, Fondateur de Gladia.io ex-directeur IA et big data d'OVH,  et **Robert Vesoul**, PDG & Co-fondateur d'Illuin Technology
     `,
     start: "11:00",
     end: "12:30",
@@ -189,10 +183,10 @@ Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques
     tags: [TAG_ESQUIVE],
   },
   {
-    title: "Retours d'expériences d'Inria autour de l'IA",
+    title: "Ressources éducatives libres sur l'IA par l'Inria",
     description: `
 - Retour Mooc Intelligence artificielle avec intelligence - **Aurélie Lagarrigue** (Ingénieure pédagogique - Inria) et **Thierry Viéville** (Chercheur en neurosciences computationelles - Inria)
-- Décrypter les outils d'IA - Projet Erasmus+ AI4T Intelligence Artificielle pour et par les enseignants, **Bénédicte Cardon** & **Marie Collin** (Ingénieures pédagogiques - Inria) et **Azim Roussanaly** (Enseignant-chercheur en informatique - LORIA)
+- Décrypter les outils d'IA - Projet Erasmus+ AI4T Intelligence Artificielle pour et par les enseignants, **Bénédicte Cardon** (Ingénieure pédagogiquee - Inria) et **Azim Roussanaly** (Enseignant-chercheur en informatique - LORIA)
 - Retour Mooc Machine learning in Python with scikit-learn, **David Arturo Amor Quiroz** (Machine Learning Engineer - Inria)
     `,
     start: "14:00",
@@ -200,7 +194,7 @@ Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques
     tags: [TAG_CARRE],
   },
   {
-    title: "Pause café & stands",
+    title: "Pause café & stands, prompt party",
     description: "",
     start: "15:30",
     end: "16:00",
@@ -227,13 +221,6 @@ Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques
     start: "16:00",
     end: "17:30",
     tags: [TAG_CARRE],
-  },
-  {
-    title: "Prompt Party",
-    description: ``,
-    start: "16:00",
-    end: "17:30",
-    tags: [TAG_CYBER],
   },
   {
     title: "Échange convivial autour d'un cocktail",

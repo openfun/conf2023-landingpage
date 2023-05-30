@@ -218,6 +218,13 @@ export const Speakers = () => {
       title: "PDG et fondateur d'Eriomem & co-fondateur de Gandi",
       imageUrl: "pierre_beyssac.jpg",
     },
+    {
+      name: "Robert",
+      lastName: "Vesoul",
+      title: "PDG & Co-fondateur",
+      company: "Illuin Technology",
+      imageUrl: "robert_vesoul.jpg",
+    },
   ];
   speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));
   return (

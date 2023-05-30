@@ -40,7 +40,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
 - Corolair : génération de quiz pour la formation en ligne, **Wassym Kalouache**, Co-fondateur et président de Corolair
 - BigBlueButton: Increasing formative assessment in Virtual Classrooms using AI, **Fred Dixon** , Co-founder of BigBlueButton
 - La transcription automatique en 99 langues as a service par **Jean-Louis Quéguiner**, fondateur de Gladia.io & ex-directeur IA et Big Data d'OVH
-- Enrichissement automatique de vidéos avec l'IA par le Paris Digital Lab de CentraleSupélec : **Antoine Vaglio**, **Bahhad Mohammed**, **Liwei Sun**, **Pierre-Louis Veyrenc**    
+- Enrichissement automatique de vidéos avec l'IA par le Paris Digital Lab de CentraleSupélec : **Antoine Vaglio**, **Mohammed Bahhad**, **Liwei Sun**, **Pierre-Louis Veyrenc**    
     `,
     start: "09:00",
     end: "10:30",

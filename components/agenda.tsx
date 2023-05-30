@@ -36,9 +36,9 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
     title: "Quelle transformation pragmatique des outils pédagogiques ?",
     description: `
 - Introduction et animation par **Hervé Luga**, Vice Président Numérique de l'Université Toulouse
-- Wooclap : Créez des QCM & flashcards en quelques secondes grâce à Quiz Wizard, **Wandrille Bonnet**, Directeur Produit chez Wooclap
-- Corolair : génération de quiz pour la formation en ligne, **Wassym Kalouache**, Co-fondateur et président de Corolair
-- BigBlueButton: Increasing formative assessment in Virtual Classrooms using AI, **Fred Dixon** , Co-founder of BigBlueButton
+- Créez des QCM & flashcards en quelques secondes grâce à Quiz Wizard, **Wandrille Bonnet**, Directeur Produit chez Wooclap
+- génération de quiz pour la formation en ligne, **Wassym Kalouache**, Co-fondateur et président de Corolair
+- Increasing formative assessment in Virtual Classrooms using AI, **Fred Dixon** , Co-founder of BigBlueButton
 - La transcription automatique en 99 langues as a service par **Jean-Louis Quéguiner**, fondateur de Gladia.io & ex-directeur IA et Big Data d'OVH
 - Enrichissement automatique de vidéos avec l'IA par le Paris Digital Lab de CentraleSupélec : **Antoine Vaglio**, **Mohammed Bahhad**, **Liwei Sun**, **Pierre-Louis Veyrenc**    
     `,
@@ -50,7 +50,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
     title:
       "Cas pratiques d'utilisation de l'apprentissage machine dans l'education",
     description: `
-Animation par **Julien Maupetit**, Chief Data Officer de France Université Numérique
+Animation par **Julien Maupetit**, Responsable des données à France Université Numérique
 - Personnalisation des apprentissages avec l’IA : exemple d’Adaptiv’Langue/EvidenceB, par **Catherine de Vulpillières**, GM & CIO cofondatrice EvidenceB
 - A4LL, un système de learning analytics pour l'apprentissage du langage, par **Rémi Venant**, Enseignant-Chercheur en Informatique à Le Mans Université    
     `,

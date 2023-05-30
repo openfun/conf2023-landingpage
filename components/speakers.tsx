@@ -225,6 +225,12 @@ export const Speakers = () => {
       company: "Illuin Technology",
       imageUrl: "robert_vesoul.jpg",
     },
+    {
+      name: "Renaud",
+      lastName: "Monnet",
+      title: "Directeur du Digital Institute de CentraleSupélec",
+      imageUrl: "renaud_monnet.jpg",
+    },
   ];
   speakers.sort((a, b) => a.lastName.localeCompare(b.lastName));
   return (

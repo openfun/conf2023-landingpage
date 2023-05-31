@@ -228,7 +228,7 @@ export const Speakers = () => {
     {
       name: "Renaud",
       lastName: "Monnet",
-      title: "Directeur du Digital Institute de CentraleSupélec",
+      title: "Directeur du Paris Digital Lab de CentraleSupélec",
       imageUrl: "renaud_monnet.jpg",
     },
   ];

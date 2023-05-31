@@ -37,7 +37,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
     description: `
 - Introduction et animation par **Hervé Luga**, Vice Président Numérique de l'Université Toulouse
 - Créez des QCM & flashcards en quelques secondes grâce à Quiz Wizard, **Wandrille Bonnet**, Directeur Produit chez Wooclap
-- génération de quiz pour la formation en ligne, **Wassym Kalouache**, Co-fondateur et président de Corolair
+- Génération de quiz pour la formation en ligne, **Wassym Kalouache**, Co-fondateur et président de Corolair
 - Increasing formative assessment in Virtual Classrooms using AI, **Fred Dixon** , Co-founder of BigBlueButton
 - La transcription automatique en 99 langues as a service par **Jean-Louis Quéguiner**, fondateur de Gladia.io & ex-directeur IA et Big Data d'OVH
 - Enrichissement automatique de vidéos avec l'IA par le Paris Digital Lab de CentraleSupélec : **Antoine Vaglio**, **Mohammed Bahhad**, **Liwei Sun**, **Pierre-Louis Veyrenc**    
@@ -50,9 +50,9 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
     title:
       "Cas pratiques d'utilisation de l'apprentissage machine dans l'education",
     description: `
-Animation par **Julien Maupetit**, Responsable des données à France Université Numérique
 - Personnalisation des apprentissages avec l’IA : exemple d’Adaptiv’Langue/EvidenceB, par **Catherine de Vulpillières**, GM & CIO cofondatrice EvidenceB
 - A4LL, un système de learning analytics pour l'apprentissage du langage, par **Rémi Venant**, Enseignant-Chercheur en Informatique à Le Mans Université    
+- Pas d'IA sans data. Vers des jeux de données libres et ouverts pour l'éducation.", par **Julien Maupetit**, Responsable des données à France Université Numérique
     `,
     start: "09:00",
     end: "10:30",
@@ -82,10 +82,11 @@ Table ronde animée par **Marie Soulez**, Avocate du cabinet Lexing Alain Bensou
   {
     title: "Retours d'expériences autour de l'IA et de la pédagogie",
     description: `
+Animation par **Sandrine Delacroix-Morvan**, responsable de communication de France Université Numérique
 - **Claire Doz**, Enseignante de lettres à la Cité scolaire Paul Valéry : Retours d'expériences sur l'utilisation de l'IA en cours de Français 
+- **Jean-François Caulier**, Vice président délégué stratégie et innovations numériques à l'université Paris 1 Panthéon Sorbonne - Comment utiliser les outils d'IA pour améliorer les cours de maths à la session    
 - **Bernard Quinio**, Directeur du Service Formation Continue & Alternance (SFCA) et enseignant chercheur à l' Université Paris Nanterre - Comment l'IA nous oblige à repenser l'enseignement dans le supérieur ? 
 - **Serge Miranda**, Professeur Emérite d'Informatique à l' Université Côte d'Azur  - IA générative et 3 dimensions de l'enseignement numérique du futur
-- **Jean-Francois Caulier**, Vice président délégué stratégie et innovations numériques à l'université Paris 1 Panthéon Sorbonne - Comment utiliser les outils d'IA pour améliorer les cours de maths à la session    
     `,
     start: "11:00",
     end: "12:30",
@@ -110,6 +111,15 @@ Table ronde animée par **Sophie Pène**, Professeure émérite en sciences de l
     start: "14:00",
     end: "15:30",
     tags: [TAG_ESQUIVE],
+  },
+  {
+    title: "Workshop sur l'Enrichissement automatique de vidéos avec l'IA",
+    description: ` 
+Par le Paris Digital Lab de CentraleSupélec: **Antoine Vaglio**, **Mohammed Bahhad**, **Liwei Sun**, **Pierre-Louis Veyrenc**
+    `,
+    start: "14:00",
+    end: "15:00",
+    tags: [TAG_CARRE],
   },
 ];
 
@@ -151,10 +161,10 @@ const AGENDA_THURSDAY: AgendaSlot[] = [
     tags: [TAG_ESQUIVE],
   },
   {
-    title: "LLM souverains : quelles alternatives à ChatGPT ?",
+    title: "Une IA souveraine : quelles alternatives à ChatGPT",
     description: `
 - Démystifier l'IA générative par **Laurent Daudet**, Directeur Général et co-fondateur de LightOn
-- Table ronde animée par **Renaud Monnet**, Directeur du Digital Institute de CentraleSupélec, avec **Laurent Daudet**, **Fabrice Epelboin**, Entrepreneur français, spécialiste des médias sociaux et du web social, **Jean-Louis Quéguiner**, Fondateur de Gladia.io ex-directeur IA et big data d'OVH,  et **Robert Vesoul**, PDG & Co-fondateur d'Illuin Technology
+- Table ronde animée par **Renaud Monnet**, Directeur du Digital Institute de CentraleSupélec, avec **Laurent Daudet**, **Fabrice Epelboin**, Entrepreneur français, spécialiste des médias sociaux et du web social, **Jean-Louis Quéguiner**, Fondateur de Gladia.io ex-directeur IA et big data d'OVH, **Samuel Paccoud**, Responsable technique de France Université Numérique et **Robert Vesoul**, PDG & Co-fondateur d'Illuin Technology
     `,
     start: "11:00",
     end: "12:30",
@@ -203,10 +213,12 @@ Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques
   },
   {
     title:
-      "L'IA générative est-elle compatible avec le changement climatique ?",
+      "À propos de la soutenabilité de l'IA : inclusivité des formations et défit climatique",
     description: `
-- Présentation par **Tristan Nitot**, Expert numérique responsable à OCTO technology  
-- Table ronde, animée par **Samuel Paccoud**, Responsable technique de France Université Numérique avec **Tristan Nitot** et **Pierre Beyssac**, PDG et fondateur d'Eriomem & co-fondateur de Gandi
+- Transformer les formations en ligne sur FUN grâce à l'IA, **Samuel Paccoud**, Responsable technique de France Université Numérique
+- L'intelligence artificielle au service de la formation des personnes en situation de handicap, **Jean Christophe Chamayou**, Coordinateur IA & inclusion chez Impact AI et Président de Lafayette Associés
+- L'IA générative est-elle compatible avec le changement climatique ? **Tristan Nitot**, expert numérique responsable à OCTO technology
+- Pour un débat apaisé sur la consommation énergétique de l'IA , **Pierre Beyssac**, PDG et fondateur d'Eriomem & co-fondateur de Gandi suivie d'une séance de questions/réponses avec la salle
     `,
     start: "16:00",
     end: "17:30",
@@ -215,6 +227,7 @@ Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques
   {
     title: "Autour des questions de souveraineté des données en IA",
     description: `
+Animation par **Caroline Crestani-Befve**, Responsable juridique et DPO de France Université Numérique
 - Essor des IA génératives : la régulation de l'IA mise à l’épreuve (**Alexis Leautier**, Ingénieur expert, CNIL et **Erevan Malroux**, Juriste au service des affaires économiques, CNIL)
 - Les licences responsables d'IA : un nouveau paradigme pour une IA ouverte, **Carlos Muñoz Ferrandis**, Avocat en affaires techniques et règlementaires chez Hugging Face
     `,

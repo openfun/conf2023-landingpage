@@ -33,12 +33,18 @@ const TAG_CARRE = {
 
 const AGENDA_FRIDAY: AgendaSlot[] = [
   {
+    title: "Accueil - Enregistrement / Petit Déjeuner rencontre",
+    start: "08:30",
+    end: "09:00",
+    tags: [TAG_HALL],
+  },
+  {
     title: "Quelle transformation pragmatique des outils pédagogiques ?",
     description: `
-- Introduction et animation par **Hervé Luga**, Vice Président Numérique de l'Université Toulouse
+- Introduction et animation par **Hervé Luga**, Vice Président Numérique de l'Université de Toulouse
 - Créez des QCM & flashcards en quelques secondes grâce à Quiz Wizard, **Wandrille Bonnet**, Directeur Produit chez Wooclap
 - Génération de quiz pour la formation en ligne, **Wassym Kalouache**, Co-fondateur et président de Corolair
-- Increasing formative assessment in Virtual Classrooms using AI, **Fred Dixon** , Co-founder of BigBlueButton
+- Intégration de quiz dans les classes virtuelles grâce à L’IA, **Fred Dixon** , Co-founder of BigBlueButton
 - La transcription automatique en 99 langues as a service par **Jean-Louis Quéguiner**, fondateur de Gladia.io & ex-directeur IA et Big Data d'OVH
 - Enrichissement automatique de vidéos avec l'IA par le Paris Digital Lab de CentraleSupélec : **Antoine Vaglio**, **Mohammed Bahhad**, **Liwei Sun**, **Pierre-Louis Veyrenc**    
     `,
@@ -84,7 +90,7 @@ Table ronde animée par **Marie Soulez**, Avocate du cabinet Lexing Alain Bensou
     description: `
 Animation par **Sandrine Delacroix-Morvan**, responsable de communication de France Université Numérique
 - **Claire Doz**, Enseignante de lettres à la Cité scolaire Paul Valéry : Retours d'expériences sur l'utilisation de l'IA en cours de Français 
-- **Jean-François Caulier**, Vice président délégué stratégie et innovations numériques à l'université Paris 1 Panthéon Sorbonne - Comment utiliser les outils d'IA pour améliorer les cours de maths à la session    
+- **Jean-François Caulier**, Vice président délégué stratégie et innovations numériques à l'université Paris 1 Panthéon Sorbonne - Comment utiliser les outils d'IA pour améliorer les cours de maths à la session ?    
 - **Bernard Quinio**, Directeur du Service Formation Continue & Alternance (SFCA) et enseignant chercheur à l' Université Paris Nanterre - Comment l'IA nous oblige à repenser l'enseignement dans le supérieur ? 
 - **Serge Miranda**, Professeur Emérite d'Informatique à l' Université Côte d'Azur  - IA générative et 3 dimensions de l'enseignement numérique du futur
     `,
@@ -215,8 +221,8 @@ Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques
     title:
       "À propos de la soutenabilité de l'IA : inclusivité des formations et défit climatique",
     description: `
-- Transformer les formations en ligne sur FUN grâce à l'IA, **Samuel Paccoud**, Responsable technique de France Université Numérique
 - L'intelligence artificielle au service de la formation des personnes en situation de handicap, **Jean Christophe Chamayou**, Coordinateur IA & inclusion chez Impact AI et Président de Lafayette Associés
+- Transformer les formations en ligne sur FUN grâce à l'IA, **Samuel Paccoud**, Responsable technique de France Université Numérique
 - L'IA générative est-elle compatible avec le changement climatique ? **Tristan Nitot**, expert numérique responsable à OCTO technology
 - Pour un débat apaisé sur la consommation énergétique de l'IA , **Pierre Beyssac**, PDG et fondateur d'Eriomem & co-fondateur de Gandi suivie d'une séance de questions/réponses avec la salle
     `,

@@ -46,7 +46,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
 - Génération de quiz pour la formation en ligne, **Wassym Kalouache**, Co-fondateur et président de Corolair
 - Intégration de quiz dans les classes virtuelles grâce à L’IA, **Fred Dixon** , Co-founder of BigBlueButton
 - La transcription automatique en 99 langues as a service par **Jean-Louis Quéguiner**, fondateur de Gladia.io & ex-directeur IA et Big Data d'OVH
-- Enrichissement automatique de vidéos avec l'IA par le Paris Digital Lab de CentraleSupélec : **Antoine Vaglio**, **Mohammed Bahhad**, **Liwei Sun**, **Pierre-Louis Veyrenc**    
+- Enrichissement automatique de vidéos avec l'IA par le Paris Digital Lab de CentraleSupélec : **Antoine Vaglio**, **Mohammed Bahhad**, **Liwei Sun**, **Pierre-Louis Veyrenc**
     `,
     start: "09:00",
     end: "10:30",
@@ -58,7 +58,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
     description: `
 - Personnalisation des apprentissages avec l’IA : exemple d’Adaptiv’Langue/EvidenceB, par **Catherine de Vulpillières**, GM & CIO cofondatrice EvidenceB
 - A4LL, un système de learning analytics pour l'apprentissage du langage, par **Rémi Venant**, Enseignant-Chercheur en Informatique à Le Mans Université    
-- Pas d'IA sans data. Vers des jeux de données libres et ouverts pour l'éducation.", par **Julien Maupetit**, Responsable des données à France Université Numérique
+- Pas d'IA sans data. Vers des jeux de données libres et ouverts pour l'éducation, par **Julien Maupetit**, Responsable des données à France Université Numérique
     `,
     start: "09:00",
     end: "10:30",
@@ -89,10 +89,10 @@ Table ronde animée par **Marie Soulez**, Avocate du cabinet Lexing Alain Bensou
     title: "Retours d'expériences autour de l'IA et de la pédagogie",
     description: `
 Animation par **Sandrine Delacroix-Morvan**, responsable de communication de France Université Numérique
-- **Claire Doz**, Enseignante de lettres à la Cité scolaire Paul Valéry : Retours d'expériences sur l'utilisation de l'IA en cours de Français 
-- **Jean-François Caulier**, Vice président délégué stratégie et innovations numériques à l'université Paris 1 Panthéon Sorbonne - Comment utiliser les outils d'IA pour améliorer les cours de maths à la session ?    
-- **Bernard Quinio**, Directeur du Service Formation Continue & Alternance (SFCA) et enseignant chercheur à l' Université Paris Nanterre - Comment l'IA nous oblige à repenser l'enseignement dans le supérieur ? 
-- **Serge Miranda**, Professeur Emérite d'Informatique à l' Université Côte d'Azur  - IA générative et 3 dimensions de l'enseignement numérique du futur
+- Retours d'expériences sur l'utilisation de l'IA en cours de Français, **Claire Doz**, Enseignante de lettres à la Cité scolaire Paul Valéry  
+- Comment utiliser les outils d'IA pour améliorer les cours de maths ? **Jean-François Caulier**, Vice président délégué stratégie et innovations numériques à l'université Paris 1 Panthéon Sorbonne    
+- Comment l'IA nous oblige à repenser l'enseignement dans le supérieur ? **Bernard Quinio**, Directeur du Service Formation Continue & Alternance (SFCA) et enseignant chercheur à l' Université Paris Nanterre 
+- IA générative et 3 dimensions de l'enseignement numérique du futur, **Serge Miranda**, Professeur Emérite d'Informatique à l' Université Côte d'Azur 
     `,
     start: "11:00",
     end: "12:30",
@@ -107,7 +107,7 @@ Animation par **Sandrine Delacroix-Morvan**, responsable de communication de Fra
     break: true,
   },
   {
-    title: "Quelle feuille de route IA pour l'enseignement supérieur ?",
+    title: "Vers une feuille de route pour l'enseignement supérieur",
     description: ` 
 Table ronde animée par **Sophie Pène**, Professeure émérite en sciences de l'information et de la communication à Université Paris Cité, ancienne vice-présidente du Conseil national du numérique
 - **Mireille Brangé**, Coordinatrice nationale de la stratégie d'accélération pour l'enseignement et le numérique au Secrétariat général pour l'investissement  

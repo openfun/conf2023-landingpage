@@ -59,6 +59,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
 - Personnalisation des apprentissages avec l’IA : exemple d’Adaptiv’Langue/EvidenceB, par **Catherine de Vulpillières**, GM & CIO cofondatrice EvidenceB
 - A4LL, un système de learning analytics pour l'apprentissage du langage, par **Rémi Venant**, Enseignant-Chercheur en Informatique à Le Mans Université    
 - Pas d'IA sans data. Vers des jeux de données libres et ouverts pour l'éducation, par **Julien Maupetit**, Responsable des données à France Université Numérique
+- Données de l'État : de l'Open Data à l'IA, **Pierre-Étienne Devineau**, Data scientist à la DINUM
     `,
     start: "09:00",
     end: "10:30",

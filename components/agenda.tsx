@@ -134,7 +134,7 @@ const AGENDA_THURSDAY: AgendaSlot[] = [
   {
     title: "Accueil - Enregistrement / Petit Déjeuner rencontre",
     description: "Mot d'Introduction de l'organisateur depuis la mezzanine",
-    start: "08:45",
+    start: "08:15",
     end: "09:30",
     tags: [TAG_HALL],
   },
@@ -170,8 +170,7 @@ const AGENDA_THURSDAY: AgendaSlot[] = [
   {
     title: "Une IA souveraine : quelles alternatives à ChatGPT",
     description: `
-- Démystifier l'IA générative par **Laurent Daudet**, Directeur Général et co-fondateur de LightOn
-- Table ronde animée par **Renaud Monnet**, Directeur du Digital Institute de CentraleSupélec, avec **Laurent Daudet**, **Fabrice Epelboin**, Entrepreneur français, spécialiste des médias sociaux et du web social, **Jean-Louis Quéguiner**, Fondateur de Gladia.io ex-directeur IA et big data d'OVH, **Samuel Paccoud**, Responsable technique de France Université Numérique et **Robert Vesoul**, PDG & Co-fondateur d'Illuin Technology
+Table ronde animée par **Renaud Monnet**, Directeur du Digital Institute de CentraleSupélec, avec **Fabrice Epelboin**, Entrepreneur français, spécialiste des médias sociaux et du web social, **Jean-Louis Quéguiner**, Fondateur de Gladia.io ex-directeur IA et big data d'OVH, **Samuel Paccoud**, Responsable technique de France Université Numérique et **Robert Vesoul**, PDG & Co-fondateur d'Illuin Technology, **Pierre-Étienne Devineau**, Data scientist à la DINUM
     `,
     start: "11:00",
     end: "12:30",
@@ -202,6 +201,7 @@ Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques
   {
     title: "Ressources éducatives libres sur l'IA par l'Inria",
     description: `
+Animation par **Jean-Marc Hasenfratz**, Responsable du service Éducation et Médiation Scientifiques d’Inria
 - Retour Mooc Intelligence artificielle avec intelligence - **Aurélie Lagarrigue** (Ingénieure pédagogique - Inria) et **Thierry Viéville** (Chercheur en neurosciences computationelles - Inria)
 - Décrypter les outils d'IA - Projet Erasmus+ AI4T Intelligence Artificielle pour et par les enseignants, **Bénédicte Cardon** (Ingénieure pédagogiquee - Inria) et **Azim Roussanaly** (Enseignant-chercheur en informatique - LORIA)
 - Retour Mooc Machine learning in Python with scikit-learn, **David Arturo Amor Quiroz** (Machine Learning Engineer - Inria)
@@ -219,13 +219,12 @@ Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques
     break: true,
   },
   {
-    title:
-      "À propos de la soutenabilité de l'IA : inclusivité des formations et défit climatique",
+    title: "IA responsable : inclusivité des formations et défi climatique",
     description: `
-- L'intelligence artificielle au service de la formation des personnes en situation de handicap, **Jean Christophe Chamayou**, Coordinateur IA & inclusion chez Impact AI et Président de Lafayette Associés
-- Transformer les formations en ligne sur FUN grâce à l'IA, **Samuel Paccoud**, Responsable technique de France Université Numérique
+- L'intelligence artificielle au service de la formation des personnes en situation de handicap, **Roxana Rugina**, secrétaire générale d'ImpactAI
 - L'IA générative est-elle compatible avec le changement climatique ? **Tristan Nitot**, expert numérique responsable à OCTO technology
 - Pour un débat apaisé sur la consommation énergétique de l'IA , **Pierre Beyssac**, PDG et fondateur d'Eriomem & co-fondateur de Gandi suivie d'une séance de questions/réponses avec la salle
+- Table ronde animée par **Samuel Paccoud**, Responsable technique de France Université Numérique avec **Tristan Nitot**, **Pierre Beyssac**, **Roxana Rugina** et **Wacim Belblidia**, Responsable de la science des données et de la durabilité à Illuin Technology
     `,
     start: "16:00",
     end: "17:30",
@@ -235,8 +234,8 @@ Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques
     title: "Autour des questions de souveraineté des données en IA",
     description: `
 Animation par **Caroline Crestani-Befve**, Responsable juridique et DPO de France Université Numérique
-- Essor des IA génératives : la régulation de l'IA mise à l’épreuve (**Alexis Leautier**, Ingénieur expert, CNIL et **Erevan Malroux**, Juriste au service des affaires économiques, CNIL)
 - Les licences responsables d'IA : un nouveau paradigme pour une IA ouverte, **Carlos Muñoz Ferrandis**, Avocat en affaires techniques et règlementaires chez Hugging Face
+- Essor des IA génératives : la régulation de l'IA mise à l’épreuve (**Alexis Leautier**, Ingénieur expert, CNIL et **Erevan Malroux**, Juriste au service des affaires économiques, CNIL)
     `,
     start: "16:00",
     end: "17:30",

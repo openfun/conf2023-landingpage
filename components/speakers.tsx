@@ -28,13 +28,13 @@ export const Speakers = () => {
       imageUrl: "jean_michel_bruguiere.jpg",
     },
     LUC_JULIA,
-    {
-      name: "Laurent",
-      lastName: "Daudet",
-      title: "Directeur Général et co-fondateur",
-      company: "LightOn",
-      imageUrl: "laurent_daudet.jpg",
-    },
+    // {
+    //   name: "Laurent",
+    //   lastName: "Daudet",
+    //   title: "Directeur Général et co-fondateur",
+    //   company: "LightOn",
+    //   imageUrl: "laurent_daudet.jpg",
+    // },
     {
       name: "Carlos",
       lastName: "Muñoz Ferrandis",

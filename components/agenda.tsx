@@ -170,7 +170,12 @@ const AGENDA_THURSDAY: AgendaSlot[] = [
   {
     title: "Une IA souveraine : quelles alternatives à ChatGPT",
     description: `
-Table ronde animée par **Renaud Monnet**, Directeur du Digital Institute de CentraleSupélec, avec **Fabrice Epelboin**, Entrepreneur français, spécialiste des médias sociaux et du web social, **Jean-Louis Quéguiner**, Fondateur de Gladia.io ex-directeur IA et big data d'OVH, **Samuel Paccoud**, Responsable technique de France Université Numérique et **Robert Vesoul**, PDG & Co-fondateur d'Illuin Technology, **Pierre-Étienne Devineau**, Data scientist à la DINUM
+Table ronde animée par **Renaud Monnet**, Directeur du Digital Institute de CentraleSupélec
+- **Fabrice Epelboin**, Entrepreneur français, spécialiste des médias sociaux et du web social
+- **Jean-Louis Quéguiner**, Fondateur de Gladia.io ex-directeur IA et big data d'OVH
+- **Samuel Paccoud**, Responsable technique de France Université Numérique
+- **Robert Vesoul**, PDG & Co-fondateur d'Illuin Technology
+- **Pierre-Étienne Devineau**, Data scientist à la DINUM
     `,
     start: "11:00",
     end: "12:30",

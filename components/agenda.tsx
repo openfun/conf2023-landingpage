@@ -1,8 +1,9 @@
 import { ContentSection } from "pages";
 import { Part } from "components/Part";
 import ReactMarkdown from "react-markdown";
+import { Button } from "@/components/Button";
 
-interface AgendaSlot {
+export interface AgendaSlot {
   title: string;
   description?: string;
   tags: {
@@ -12,6 +13,8 @@ interface AgendaSlot {
   start: string;
   end: string;
   break?: boolean;
+  videoUrl?: string;
+  file?: string;
 }
 
 const TAG_HALL = {
@@ -26,10 +29,26 @@ const TAG_CARRE = {
   name: "Salle Le Carré",
   color: "bg-green-700",
 };
-// const TAG_CYBER = {
-//   name: "Cybersphère",
-//   color: "bg-violet-700",
-// };
+
+/**
+ * FRIDAY 9TH.
+ */
+
+export const SLOT_DROITS_DAUTEUR = {
+  title: "Les droits d'auteur sont-ils menacés par l'IA générative ?",
+  description: `
+Table ronde animée par **Marie Soulez**, Avocate du cabinet Lexing Alain Bensoussan Avocats, spécialisée en droit de la propriété intellectuelle, directrice du département contentieux de la propriété intellectuelle.
+- **Jean-Michel Bruguière**, Professeur à l'université Grenoble-Alpes, Directeur du Centre universitaire d’enseignement et de recherche en propriété intellectuelle, Avocat of Counsel au cabinet Deprez Guignot & Associés
+- **Jean-Marc Deltorn**, Chercheur au Centre d’études internationales de la propriété intellectuelle (CEIPI), responsable scientifique du DU Intelligence artificielle et propriété intellectuelle à l'Université de Strasbourg
+- **Pierre-Carl Langlais**, Directeur de la recherche chez OpSci
+- **Arthur Millerand**, Avocat associé du cabinet Parallel Avocats, expert du numérique et des nouvelles technologies    
+    `,
+  start: "11:00",
+  end: "12:30",
+  tags: [TAG_ESQUIVE],
+  videoUrl: "https://www.youtube.com/embed/fzScLOWX5B4",
+  file: "Vendredi 9 11h Salle Esquive.zip",
+};
 
 const AGENDA_FRIDAY: AgendaSlot[] = [
   {
@@ -51,6 +70,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
     start: "09:00",
     end: "10:30",
     tags: [TAG_ESQUIVE],
+    file: "Vendredi 9 9h Salle Esquive.zip",
   },
   {
     title:
@@ -64,6 +84,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
     start: "09:00",
     end: "10:30",
     tags: [TAG_CARRE],
+    file: "Vendredi 9 9h Le Carre.zip",
   },
   {
     title: "Pause café & stands, prompt party",
@@ -73,19 +94,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
     tags: [TAG_HALL],
     break: true,
   },
-  {
-    title: "Les droits d'auteur sont-ils menacés par l'IA générative ?",
-    description: `
-Table ronde animée par **Marie Soulez**, Avocate du cabinet Lexing Alain Bensoussan Avocats, spécialisée en droit de la propriété intellectuelle, directrice du département contentieux de la propriété intellectuelle.
-- **Jean-Michel Bruguière**, Professeur à l'université Grenoble-Alpes, Directeur du Centre universitaire d’enseignement et de recherche en propriété intellectuelle, Avocat of Counsel au cabinet Deprez Guignot & Associés
-- **Jean-Marc Deltorn**, Chercheur au Centre d’études internationales de la propriété intellectuelle (CEIPI), responsable scientifique du DU Intelligence artificielle et propriété intellectuelle à l'Université de Strasbourg
-- **Pierre-Carl Langlais**, Directeur de la recherche chez OpSci
-- **Arthur Millerand**, Avocat associé du cabinet Parallel Avocats, expert du numérique et des nouvelles technologies    
-    `,
-    start: "11:00",
-    end: "12:30",
-    tags: [TAG_ESQUIVE],
-  },
+  SLOT_DROITS_DAUTEUR,
   {
     title: "Retours d'expériences autour de l'IA et de la pédagogie",
     description: `
@@ -98,6 +107,7 @@ Animation par **Sandrine Delacroix-Morvan**, responsable de communication de Fra
     start: "11:00",
     end: "12:30",
     tags: [TAG_CARRE],
+    file: "Vendredi 9 11h Le Carre.zip",
   },
   {
     title: "Pause Déjeuner",
@@ -127,8 +137,85 @@ Par le Paris Digital Lab de CentraleSupélec: **Antoine Vaglio**, **Mohammed Bah
     start: "14:00",
     end: "15:00",
     tags: [TAG_CARRE],
+    file: "Vendredi 9 14h Le Carre.zip",
   },
 ];
+
+/**
+ * THURSDAY 8TH.
+ */
+
+export const SLOT_LUC_JULIA = {
+  title: "L’intelligence artificielle n’existe pas",
+  description:
+    "**Luc Julia**, Co-créateur de Siri avec Adam Cheyer et Chief Scientific Officer de Renault Group",
+  start: "09:30",
+  end: "10:30",
+  tags: [TAG_ESQUIVE],
+  videoUrl: "https://www.youtube.com/embed/yuDBSbng_8o",
+};
+
+export const SLOT_IMPACT_IA = {
+  title:
+    "Impact de l'IA sur l'enseignement supérieur : est-on face à un changement de paradigme ?",
+  description: `Table ronde animée par **Sophie Pène**, Professeure émérite en sciences de l'information et de la communication à Université Paris Cité, ancienne vice-présidente du Conseil national du numérique
+- **David Cassagne**, Vice-Président délégué au Numérique pour la Formation à l'Université de Montpellier 
+- **Alain Goudey**,  Directeur Général Adjoint en charge du numérique à NEOMA Business School
+- **Vanda Luengo**, Professeure en informatique au Laboratoire LIP6, Sorbonne Université
+- **Marc Oddon**, Vice Président formation continue, apprentissage et insertion professionnelle à l'Université Grenoble Alpes
+    `,
+  start: "11:00",
+  end: "12:30",
+  tags: [TAG_ESQUIVE],
+  videoUrl: "https://www.youtube.com/embed/I3mcqNFrW0g",
+};
+
+export const SLOT_ENJEUX_ETHIQUES = {
+  title:
+    "Quels sont les enjeux éthiques à l'utilisation de l'IA dans l'éducation ?",
+  description: `
+Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques et transverses à l'ANSSI, avec
+- **Raja Chatila**, Professeur émérite d'intelligence artificielle et d'éthique des technologies à Sorbonne Université, Membre du Comité national pilote d'éthique du numérique (CNPEN)
+- **Alexis Leautier**, Ingénieur expert, CNIL 
+- **Giada Pistilli**, Responsable de l'éthique, Hugging Face 
+- **Catherine Tessier**, Chercheuse et Référente intégrité scientifique et éthique de la recherche (ONERA - The French Aerospace Lab) et Membre du Comité national pilote d'éthique du numérique (CNPEN)
+    `,
+  start: "14:00",
+  end: "15:30",
+  tags: [TAG_ESQUIVE],
+  videoUrl: "https://www.youtube.com/embed/P1k4nBurI3Y",
+};
+
+export const SLOT_IA_SOUVERAINE = {
+  title: "Une IA souveraine : quelles alternatives à ChatGPT",
+  description: `
+Table ronde animée par **Renaud Monnet**, Directeur du Digital Institute de CentraleSupélec
+- **Fabrice Epelboin**, Entrepreneur français, spécialiste des médias sociaux et du web social
+- **Jean-Louis Quéguiner**, Fondateur de Gladia.io ex-directeur IA et big data d'OVH
+- **Samuel Paccoud**, Responsable technique de France Université Numérique
+- **Robert Vesoul**, PDG & Co-fondateur d'Illuin Technology
+- **Pierre-Étienne Devineau**, Data scientist à la DINUM
+    `,
+  start: "11:00",
+  end: "12:30",
+  tags: [TAG_CARRE],
+  videoUrl: "https://www.youtube.com/embed/K27mi_9N0DM",
+};
+
+export const SLOT_IA_RESPONSABLE = {
+  title: "IA responsable : inclusivité des formations et défi climatique",
+  description: `
+- L'intelligence artificielle au service de la formation des personnes en situation de handicap, **Roxana Rugina**, secrétaire générale d'ImpactAI
+- L'IA générative est-elle compatible avec le changement climatique ? **Tristan Nitot**, expert numérique responsable à OCTO technology
+- Pour un débat apaisé sur la consommation énergétique de l'IA , **Pierre Beyssac**, PDG et fondateur d'Eriomem & co-fondateur de Gandi suivie d'une séance de questions/réponses avec la salle
+- Table ronde animée par **Samuel Paccoud**, Responsable technique de France Université Numérique avec **Tristan Nitot**, **Pierre Beyssac**, **Roxana Rugina** et **Wacim Belblidia**, Responsable de la science des données et de la durabilité à Illuin Technology
+    `,
+  start: "16:00",
+  end: "17:30",
+  tags: [TAG_ESQUIVE],
+  videoUrl: "https://www.youtube.com/embed/ovFOXEsyPpk",
+  file: "Jeudi 8 16h Salle Esquive.zip",
+};
 
 const AGENDA_THURSDAY: AgendaSlot[] = [
   {
@@ -138,14 +225,7 @@ const AGENDA_THURSDAY: AgendaSlot[] = [
     end: "09:30",
     tags: [TAG_HALL],
   },
-  {
-    title: "L’intelligence artificielle n’existe pas",
-    description:
-      "**Luc Julia**, Co-créateur de Siri avec Adam Cheyer et Chief Scientific Officer de Renault Group",
-    start: "09:30",
-    end: "10:30",
-    tags: [TAG_ESQUIVE],
-  },
+  SLOT_LUC_JULIA,
   {
     title: "Pause café & stands, prompt party",
     description: "",
@@ -154,33 +234,8 @@ const AGENDA_THURSDAY: AgendaSlot[] = [
     tags: [TAG_HALL],
     break: true,
   },
-  {
-    title:
-      "Impact de l'IA sur l'enseignement supérieur : est-on face à un changement de paradigme ?",
-    description: `Table ronde animée par **Sophie Pène**, Professeure émérite en sciences de l'information et de la communication à Université Paris Cité, ancienne vice-présidente du Conseil national du numérique
-- **David Cassagne**, Vice-Président délégué au Numérique pour la Formation à l'Université de Montpellier 
-- **Alain Goudey**,  Directeur Général Adjoint en charge du numérique à NEOMA Business School
-- **Vanda Luengo**, Professeure en informatique au Laboratoire LIP6, Sorbonne Université
-- **Marc Oddon**, Vice Président formation continue, apprentissage et insertion professionnelle à l'Université Grenoble Alpes
-    `,
-    start: "11:00",
-    end: "12:30",
-    tags: [TAG_ESQUIVE],
-  },
-  {
-    title: "Une IA souveraine : quelles alternatives à ChatGPT",
-    description: `
-Table ronde animée par **Renaud Monnet**, Directeur du Digital Institute de CentraleSupélec
-- **Fabrice Epelboin**, Entrepreneur français, spécialiste des médias sociaux et du web social
-- **Jean-Louis Quéguiner**, Fondateur de Gladia.io ex-directeur IA et big data d'OVH
-- **Samuel Paccoud**, Responsable technique de France Université Numérique
-- **Robert Vesoul**, PDG & Co-fondateur d'Illuin Technology
-- **Pierre-Étienne Devineau**, Data scientist à la DINUM
-    `,
-    start: "11:00",
-    end: "12:30",
-    tags: [TAG_CARRE],
-  },
+  SLOT_IMPACT_IA,
+  SLOT_IA_SOUVERAINE,
   {
     title: "Pause Déjeuner",
     description: "",
@@ -214,6 +269,7 @@ Animation par **Bénédicte Cardon**, Responsable du service Éducation et Médi
     start: "14:00",
     end: "15:30",
     tags: [TAG_CARRE],
+    file: "Jeudi 8 14h Le Carre.zip",
   },
   {
     title: "Pause café & stands, prompt party",
@@ -223,18 +279,7 @@ Animation par **Bénédicte Cardon**, Responsable du service Éducation et Médi
     tags: [TAG_HALL],
     break: true,
   },
-  {
-    title: "IA responsable : inclusivité des formations et défi climatique",
-    description: `
-- L'intelligence artificielle au service de la formation des personnes en situation de handicap, **Roxana Rugina**, secrétaire générale d'ImpactAI
-- L'IA générative est-elle compatible avec le changement climatique ? **Tristan Nitot**, expert numérique responsable à OCTO technology
-- Pour un débat apaisé sur la consommation énergétique de l'IA , **Pierre Beyssac**, PDG et fondateur d'Eriomem & co-fondateur de Gandi suivie d'une séance de questions/réponses avec la salle
-- Table ronde animée par **Samuel Paccoud**, Responsable technique de France Université Numérique avec **Tristan Nitot**, **Pierre Beyssac**, **Roxana Rugina** et **Wacim Belblidia**, Responsable de la science des données et de la durabilité à Illuin Technology
-    `,
-    start: "16:00",
-    end: "17:30",
-    tags: [TAG_ESQUIVE],
-  },
+  SLOT_IA_RESPONSABLE,
   {
     title: "Autour des questions de souveraineté des données en IA",
     description: `
@@ -303,26 +348,42 @@ export const AgendaSlotCard = ({ slot }: { slot: AgendaSlot }) => {
           </div>
         </div>
       ) : (
-        <div className="bg-fun-grey-200 flex-grow border-l-fun-grey-300 border-l-[3px] px-2 md:px-5 py-1 md:py-4">
-          <div className="font-semibold text-base md:text-lg">{slot.title}</div>
-          <div className="text-xs md:text-sm font-light mt-1 prose max-w-full prose-p:m-0 prose-ul:m-0">
-            <ReactMarkdown>{slot.description!}</ReactMarkdown>
-          </div>
-          <div className="flex mt-2">
-            {slot.tags.map((tag, i) => (
-              <div
-                key={i}
-                className={
-                  "text-white font-semibold text-xs px-2 py-1 rounded-full " +
-                  tag.color
-                }
-              >
-                {tag.name}
-              </div>
-            ))}
-          </div>
-        </div>
+        <AgendaSlotText slot={slot} />
       )}
     </div>
   );
 };
+
+export const AgendaSlotText = ({ slot }: { slot: AgendaSlot }) => (
+  <div className="bg-fun-grey-200 flex-grow border-l-fun-grey-300 border-l-[3px] px-2 md:px-5 py-1 md:py-4">
+    <div className="font-semibold text-base md:text-lg">{slot.title}</div>
+    <div className="text-xs md:text-sm font-light mt-1 prose max-w-full prose-p:m-0 prose-ul:m-0">
+      <ReactMarkdown>{slot.description!}</ReactMarkdown>
+    </div>
+    <div className="flex mt-2">
+      {slot.tags.map((tag, i) => (
+        <div
+          key={i}
+          className={
+            "text-white font-semibold text-xs px-2 py-1 rounded-full " +
+            tag.color
+          }
+        >
+          {tag.name}
+        </div>
+      ))}
+    </div>
+    {slot.file && (
+      <div className="mt-2">
+        <a
+          className="underline text-xs md:text-sm font-light"
+          href={"slides/" + slot.file}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Télécharger les slides
+        </a>
+      </div>
+    )}
+  </div>
+);

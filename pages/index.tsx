@@ -5,6 +5,7 @@ import { Speakers } from "components/speakers";
 import { Talks } from "components/talks";
 import { Sponsors } from "components/sponsors";
 import { LargeCard, SmallCard } from "@/components/Cards";
+import { Replays } from "@/components/replay";
 
 declare let _paq: any;
 const gradient =
@@ -83,6 +84,7 @@ const Content = () => (
         <BookButton />
       </div>
     </ContentSection>
+    <Replays />
     <Speakers />
     <Talks />
     <Sponsors />
@@ -233,18 +235,19 @@ export const ContentSection = ({
   );
 };
 
-const BookButton = () => (
-  <Button
-    className="bg-gradient-to-r from-fun-orange-700 to-fun-orange-800 text-sm"
-    target="_blank"
-    href="https://my.weezevent.com/la-conference-ia-education"
-    onClick={() => {
-      _paq?.push(["sendEvent", "click.action", { page: "book" }]);
-    }}
-  >
-    Réserver ma place
-  </Button>
-);
+// const BookButton = () => (
+//   <Button
+//     className="bg-gradient-to-r from-fun-orange-700 to-fun-orange-800 text-sm"
+//     target="_blank"
+//     href="https://my.weezevent.com/la-conference-ia-education"
+//     onClick={() => {
+//       _paq?.push(["sendEvent", "click.action", { page: "book" }]);
+//     }}
+//   >
+//     Réserver ma place
+//   </Button>
+// );
+const BookButton = () => <></>;
 
 const SecondaryButton = ({
   className,

@@ -1,7 +1,6 @@
 import { ContentSection } from "pages";
 import { Part } from "components/Part";
 import ReactMarkdown from "react-markdown";
-import { Button } from "@/components/Button";
 
 export interface AgendaSlot {
   title: string;

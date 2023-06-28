@@ -1,4 +1,3 @@
-import ReactMarkdown from "react-markdown";
 import { Part } from "@/components/Part";
 import { ContentSection } from "@/pages";
 import {
@@ -26,8 +25,8 @@ export const Replays = () => {
     <ContentSection className="bg-white">
       <Part title="Les conférences en vidéo">
         <div className="flex flex-col gap-4">
-          {REPLAYS.map((replay) => (
-            <Replay replay={replay} />
+          {REPLAYS.map((replay, i) => (
+            <Replay key={i} replay={replay} />
           ))}
         </div>
       </Part>

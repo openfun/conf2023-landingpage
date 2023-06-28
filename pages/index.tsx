@@ -51,9 +51,7 @@ const Hero = () => (
           <li>Présentations flash</li>
           <li>Prompt party</li>
         </ul>
-        <div className="mt-6">
-          <BookButton />
-        </div>
+        <div className="mt-6">{/* <BookButton /> */}</div>
       </div>
     </div>
   </div>
@@ -80,9 +78,7 @@ const Content = () => (
         <br />
         Les 8 et 9 juin 2023 répondons à ces questions ensemble !
       </p>
-      <div className="mt-20">
-        <BookButton />
-      </div>
+      <div className="mt-20">{/* <BookButton /> */}</div>
     </ContentSection>
     <Replays />
     <Speakers />
@@ -235,20 +231,19 @@ export const ContentSection = ({
   );
 };
 
-// const BookButton = () => (
-//   <Button
-//     className="bg-gradient-to-r from-fun-orange-700 to-fun-orange-800 text-sm"
-//     target="_blank"
-//     href="https://my.weezevent.com/la-conference-ia-education"
-//     onClick={() => {
-//       _paq?.push(["sendEvent", "click.action", { page: "book" }]);
-//     }}
-//   >
-//     Réserver ma place
-//   </Button>
-// );
-const BookButton = () => <></>;
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const BookButton = () => (
+  <Button
+    className="bg-gradient-to-r from-fun-orange-700 to-fun-orange-800 text-sm"
+    target="_blank"
+    href="https://my.weezevent.com/la-conference-ia-education"
+    onClick={() => {
+      _paq?.push(["sendEvent", "click.action", { page: "book" }]);
+    }}
+  >
+    Réserver ma place
+  </Button>
+);
 const SecondaryButton = ({
   className,
   ...props

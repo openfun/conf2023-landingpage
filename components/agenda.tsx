@@ -49,6 +49,22 @@ Table ronde animée par **Marie Soulez**, Avocate du cabinet Lexing Alain Bensou
   file: "Vendredi 9 11h Salle Esquive.zip",
 };
 
+export const SLOT_RETOURS_EXP_IA_PEDAGOGIE = {
+  title: "Retours d'expériences autour de l'IA et de la pédagogie",
+  description: `
+Animation par **Sandrine Delacroix-Morvan**, responsable de communication de France Université Numérique
+- Retours d'expériences sur l'utilisation de l'IA en cours de Français, **Claire Doz**, Enseignante de lettres à la Cité scolaire Paul Valéry  
+- Comment utiliser les outils d'IA pour améliorer les cours de maths ? **Jean-François Caulier**, Vice président délégué stratégie et innovations numériques à l'université Paris 1 Panthéon Sorbonne    
+- Comment l'IA nous oblige à repenser l'enseignement dans le supérieur ? **Bernard Quinio**, Directeur du Service Formation Continue & Alternance (SFCA) et enseignant chercheur à l' Université Paris Nanterre 
+- IA générative et 3 dimensions de l'enseignement numérique du futur, **Serge Miranda**, Professeur Emérite d'Informatique à l' Université Côte d'Azur 
+    `,
+  start: "11:00",
+  end: "12:30",
+  tags: [TAG_CARRE],
+  file: "Vendredi 9 11h Le Carre.zip",
+  videoUrl: "https://www.youtube.com/embed/6c5VeUTBDg4",
+};
+
 const AGENDA_FRIDAY: AgendaSlot[] = [
   {
     title: "Accueil - Enregistrement / Petit Déjeuner rencontre",
@@ -94,20 +110,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
     break: true,
   },
   SLOT_DROITS_DAUTEUR,
-  {
-    title: "Retours d'expériences autour de l'IA et de la pédagogie",
-    description: `
-Animation par **Sandrine Delacroix-Morvan**, responsable de communication de France Université Numérique
-- Retours d'expériences sur l'utilisation de l'IA en cours de Français, **Claire Doz**, Enseignante de lettres à la Cité scolaire Paul Valéry  
-- Comment utiliser les outils d'IA pour améliorer les cours de maths ? **Jean-François Caulier**, Vice président délégué stratégie et innovations numériques à l'université Paris 1 Panthéon Sorbonne    
-- Comment l'IA nous oblige à repenser l'enseignement dans le supérieur ? **Bernard Quinio**, Directeur du Service Formation Continue & Alternance (SFCA) et enseignant chercheur à l' Université Paris Nanterre 
-- IA générative et 3 dimensions de l'enseignement numérique du futur, **Serge Miranda**, Professeur Emérite d'Informatique à l' Université Côte d'Azur 
-    `,
-    start: "11:00",
-    end: "12:30",
-    tags: [TAG_CARRE],
-    file: "Vendredi 9 11h Le Carre.zip",
-  },
+  SLOT_RETOURS_EXP_IA_PEDAGOGIE,
   {
     title: "Pause Déjeuner",
     description: "",
@@ -216,6 +219,19 @@ export const SLOT_IA_RESPONSABLE = {
   file: "Jeudi 8 16h Salle Esquive.zip",
 };
 
+export const SLOT_SOUVERAINETE_DONNEES = {
+  title: "Autour des questions de souveraineté des données en IA",
+  description: `
+Animation par **Caroline Crestani-Befve**, Responsable juridique et DPO de France Université Numérique
+- Les licences responsables d'IA : un nouveau paradigme pour une IA ouverte, **Carlos Muñoz Ferrandis**, Avocat en affaires techniques et règlementaires chez Hugging Face
+- Essor des IA génératives : la régulation de l'IA mise à l’épreuve (**Alexis Leautier**, Ingénieur expert, CNIL et **Erevan Malroux**, Juriste au service des affaires économiques, CNIL)
+    `,
+  start: "16:00",
+  end: "17:30",
+  tags: [TAG_CARRE],
+  videoUrl: "https://www.youtube.com/embed/A73erFZyfuE",
+};
+
 const AGENDA_THURSDAY: AgendaSlot[] = [
   {
     title: "Accueil - Enregistrement / Petit Déjeuner rencontre",
@@ -279,17 +295,7 @@ Animation par **Bénédicte Cardon**, Responsable du service Éducation et Médi
     break: true,
   },
   SLOT_IA_RESPONSABLE,
-  {
-    title: "Autour des questions de souveraineté des données en IA",
-    description: `
-Animation par **Caroline Crestani-Befve**, Responsable juridique et DPO de France Université Numérique
-- Les licences responsables d'IA : un nouveau paradigme pour une IA ouverte, **Carlos Muñoz Ferrandis**, Avocat en affaires techniques et règlementaires chez Hugging Face
-- Essor des IA génératives : la régulation de l'IA mise à l’épreuve (**Alexis Leautier**, Ingénieur expert, CNIL et **Erevan Malroux**, Juriste au service des affaires économiques, CNIL)
-    `,
-    start: "16:00",
-    end: "17:30",
-    tags: [TAG_CARRE],
-  },
+  SLOT_SOUVERAINETE_DONNEES,
   {
     title: "Échange convivial autour d'un cocktail",
     description: ``,

@@ -9,6 +9,8 @@ import {
   SLOT_DROITS_DAUTEUR,
   SLOT_IA_RESPONSABLE,
   AgendaSlotText,
+  SLOT_SOUVERAINETE_DONNEES,
+  SLOT_RETOURS_EXP_IA_PEDAGOGIE,
 } from "@/components/agenda";
 
 const REPLAYS: AgendaSlot[] = [
@@ -18,6 +20,8 @@ const REPLAYS: AgendaSlot[] = [
   SLOT_IA_SOUVERAINE,
   SLOT_DROITS_DAUTEUR,
   SLOT_IA_RESPONSABLE,
+  SLOT_SOUVERAINETE_DONNEES,
+  SLOT_RETOURS_EXP_IA_PEDAGOGIE,
 ];
 
 export const Replays = () => {

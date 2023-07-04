@@ -65,6 +65,22 @@ Animation par **Sandrine Delacroix-Morvan**, responsable de communication de Fra
   videoUrl: "https://www.youtube.com/embed/6c5VeUTBDg4",
 };
 
+export const SLOT_CAS_PRATIQUES = {
+  title:
+    "Cas pratiques d'utilisation de l'apprentissage machine dans l'education",
+  description: `
+- Personnalisation des apprentissages avec l’IA : exemple d’Adaptiv’Langue/EvidenceB, par **Catherine de Vulpillières**, GM & CIO cofondatrice EvidenceB
+- A4LL, un système de learning analytics pour l'apprentissage du langage, par **Rémi Venant**, Enseignant-Chercheur en Informatique à Le Mans Université    
+- Pas d'IA sans data. Vers des jeux de données libres et ouverts pour l'éducation, par **Julien Maupetit**, Responsable des données à France Université Numérique
+- Données de l'État : de l'Open Data à l'IA, **Pierre-Étienne Devineau**, Data scientist à la DINUM
+    `,
+  start: "09:00",
+  end: "10:30",
+  tags: [TAG_CARRE],
+  file: "Vendredi 9 9h Le Carre.zip",
+  videoUrl: "https://www.youtube.com/embed/yK_5SRi3WRI",
+};
+
 const AGENDA_FRIDAY: AgendaSlot[] = [
   {
     title: "Accueil - Enregistrement / Petit Déjeuner rencontre",
@@ -87,20 +103,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
     tags: [TAG_ESQUIVE],
     file: "Vendredi 9 9h Salle Esquive.zip",
   },
-  {
-    title:
-      "Cas pratiques d'utilisation de l'apprentissage machine dans l'education",
-    description: `
-- Personnalisation des apprentissages avec l’IA : exemple d’Adaptiv’Langue/EvidenceB, par **Catherine de Vulpillières**, GM & CIO cofondatrice EvidenceB
-- A4LL, un système de learning analytics pour l'apprentissage du langage, par **Rémi Venant**, Enseignant-Chercheur en Informatique à Le Mans Université    
-- Pas d'IA sans data. Vers des jeux de données libres et ouverts pour l'éducation, par **Julien Maupetit**, Responsable des données à France Université Numérique
-- Données de l'État : de l'Open Data à l'IA, **Pierre-Étienne Devineau**, Data scientist à la DINUM
-    `,
-    start: "09:00",
-    end: "10:30",
-    tags: [TAG_CARRE],
-    file: "Vendredi 9 9h Le Carre.zip",
-  },
+  SLOT_CAS_PRATIQUES,
   {
     title: "Pause café & stands, prompt party",
     description: "",

@@ -81,6 +81,18 @@ export const SLOT_CAS_PRATIQUES = {
   videoUrl: "https://www.youtube.com/embed/yK_5SRi3WRI",
 };
 
+export const SLOT_WORKSHOP = {
+  title: "Workshop sur l'Enrichissement automatique de vidéos avec l'IA",
+  description: ` 
+Par le Paris Digital Lab de CentraleSupélec: **Antoine Vaglio**, **Mohammed Bahhad**, **Liwei Sun**, **Pierre-Louis Veyrenc**
+    `,
+  start: "14:00",
+  end: "15:00",
+  tags: [TAG_CARRE],
+  file: "Vendredi 9 14h Le Carre.zip",
+  videoUrl: "https://www.youtube.com/embed/WSHwnoTvg8k",
+};
+
 const AGENDA_FRIDAY: AgendaSlot[] = [
   {
     title: "Accueil - Enregistrement / Petit Déjeuner rencontre",
@@ -134,16 +146,7 @@ Table ronde animée par **Sophie Pène**, Professeure émérite en sciences de l
     end: "15:30",
     tags: [TAG_ESQUIVE],
   },
-  {
-    title: "Workshop sur l'Enrichissement automatique de vidéos avec l'IA",
-    description: ` 
-Par le Paris Digital Lab de CentraleSupélec: **Antoine Vaglio**, **Mohammed Bahhad**, **Liwei Sun**, **Pierre-Louis Veyrenc**
-    `,
-    start: "14:00",
-    end: "15:00",
-    tags: [TAG_CARRE],
-    file: "Vendredi 9 14h Le Carre.zip",
-  },
+  SLOT_WORKSHOP,
 ];
 
 /**

@@ -93,6 +93,20 @@ Par le Paris Digital Lab de CentraleSupélec: **Antoine Vaglio**, **Mohammed Bah
   videoUrl: "https://www.youtube.com/embed/WSHwnoTvg8k",
 };
 
+export const SLOT_FEUILLE_ROUTE = {
+  title: "Vers une feuille de route pour l'enseignement supérieur",
+  description: ` 
+Table ronde animée par **Sophie Pène**, Professeure émérite en sciences de l'information et de la communication à Université Paris Cité, ancienne vice-présidente du Conseil national du numérique
+- **Mireille Brangé**, Coordinatrice nationale de la stratégie d'accélération pour l'enseignement et le numérique au Secrétariat général pour l'investissement  
+- **Gilles Roussel**, Président de l’Université Gustave Eiffel, Référent numérique à France Universités         
+- **Bruno Sportisse**, Président-directeur général d'Inria
+    `,
+  start: "14:00",
+  end: "15:30",
+  tags: [TAG_ESQUIVE],
+  videoUrl: "https://www.youtube.com/embed/gC4_oejOTXE",
+};
+
 const AGENDA_FRIDAY: AgendaSlot[] = [
   {
     title: "Accueil - Enregistrement / Petit Déjeuner rencontre",
@@ -134,18 +148,7 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
     tags: [TAG_HALL],
     break: true,
   },
-  {
-    title: "Vers une feuille de route pour l'enseignement supérieur",
-    description: ` 
-Table ronde animée par **Sophie Pène**, Professeure émérite en sciences de l'information et de la communication à Université Paris Cité, ancienne vice-présidente du Conseil national du numérique
-- **Mireille Brangé**, Coordinatrice nationale de la stratégie d'accélération pour l'enseignement et le numérique au Secrétariat général pour l'investissement  
-- **Gilles Roussel**, Président de l’Université Gustave Eiffel, Référent numérique à France Universités         
-- **Bruno Sportisse**, Président-directeur général d'Inria
-    `,
-    start: "14:00",
-    end: "15:30",
-    tags: [TAG_ESQUIVE],
-  },
+  SLOT_FEUILLE_ROUTE,
   SLOT_WORKSHOP,
 ];
 
@@ -238,6 +241,21 @@ Animation par **Caroline Crestani-Befve**, Responsable juridique et DPO de Franc
   videoUrl: "https://www.youtube.com/embed/A73erFZyfuE",
 };
 
+export const SLOT_RESSOURCES_EDUCATIVES = {
+  title: "Ressources éducatives libres sur l'IA par l'Inria",
+  description: `
+Animation par **Bénédicte Cardon**, Responsable du service Éducation et Médiation Scientifiques d’Inria
+- Retour Mooc Intelligence artificielle avec intelligence - **Aurélie Lagarrigue** (Ingénieure pédagogique - Inria) et **Thierry Viéville** (Chercheur en neurosciences computationelles - Inria)
+- Décrypter les outils d'IA - Projet Erasmus+ AI4T Intelligence Artificielle pour et par les enseignants, **Bénédicte Cardon** (Ingénieure pédagogiquee - Inria) et **Azim Roussanaly** (Enseignant-chercheur en informatique - LORIA)
+- Retour Mooc Machine learning in Python with scikit-learn, **David Arturo Amor Quiroz** (Machine Learning Engineer - Inria)
+    `,
+  start: "14:00",
+  end: "15:30",
+  tags: [TAG_CARRE],
+  file: "Jeudi 8 14h Le Carre.zip",
+  videoUrl: "https://www.youtube.com/embed/IEw6kDSayts",
+};
+
 const AGENDA_THURSDAY: AgendaSlot[] = [
   {
     title: "Accueil - Enregistrement / Petit Déjeuner rencontre",
@@ -279,19 +297,7 @@ Table ronde animée par **Alix Durand**, chargée de mission Affaires politiques
     end: "15:30",
     tags: [TAG_ESQUIVE],
   },
-  {
-    title: "Ressources éducatives libres sur l'IA par l'Inria",
-    description: `
-Animation par **Bénédicte Cardon**, Responsable du service Éducation et Médiation Scientifiques d’Inria
-- Retour Mooc Intelligence artificielle avec intelligence - **Aurélie Lagarrigue** (Ingénieure pédagogique - Inria) et **Thierry Viéville** (Chercheur en neurosciences computationelles - Inria)
-- Décrypter les outils d'IA - Projet Erasmus+ AI4T Intelligence Artificielle pour et par les enseignants, **Bénédicte Cardon** (Ingénieure pédagogiquee - Inria) et **Azim Roussanaly** (Enseignant-chercheur en informatique - LORIA)
-- Retour Mooc Machine learning in Python with scikit-learn, **David Arturo Amor Quiroz** (Machine Learning Engineer - Inria)
-    `,
-    start: "14:00",
-    end: "15:30",
-    tags: [TAG_CARRE],
-    file: "Jeudi 8 14h Le Carre.zip",
-  },
+  SLOT_RESSOURCES_EDUCATIVES,
   {
     title: "Pause café & stands, prompt party",
     description: "",

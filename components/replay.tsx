@@ -13,6 +13,8 @@ import {
   SLOT_RETOURS_EXP_IA_PEDAGOGIE,
   SLOT_CAS_PRATIQUES,
   SLOT_WORKSHOP,
+  SLOT_FEUILLE_ROUTE,
+  SLOT_RESSOURCES_EDUCATIVES,
 } from "@/components/agenda";
 
 const REPLAYS: AgendaSlot[] = [
@@ -26,6 +28,8 @@ const REPLAYS: AgendaSlot[] = [
   SLOT_RETOURS_EXP_IA_PEDAGOGIE,
   SLOT_CAS_PRATIQUES,
   SLOT_WORKSHOP,
+  SLOT_RESSOURCES_EDUCATIVES,
+  SLOT_FEUILLE_ROUTE,
 ];
 
 export const Replays = () => {

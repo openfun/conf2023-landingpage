@@ -107,16 +107,9 @@ Table ronde animée par **Sophie Pène**, Professeure émérite en sciences de l
   videoUrl: "https://www.youtube.com/embed/gC4_oejOTXE",
 };
 
-const AGENDA_FRIDAY: AgendaSlot[] = [
-  {
-    title: "Accueil - Enregistrement / Petit Déjeuner rencontre",
-    start: "08:30",
-    end: "09:00",
-    tags: [TAG_HALL],
-  },
-  {
-    title: "Quelle transformation pragmatique des outils pédagogiques ?",
-    description: `
+export const SLOT_TRANSFORMATIONS_PRAGMATIQUES = {
+  title: "Quelle transformation pragmatique des outils pédagogiques ?",
+  description: `
 - Introduction et animation par **Hervé Luga**, Vice Président Numérique de l'Université de Toulouse
 - Créez des QCM & flashcards en quelques secondes grâce à Quiz Wizard, **Wandrille Bonnet**, Directeur Produit chez Wooclap
 - Génération de quiz pour la formation en ligne, **Wassym Kalouache**, Co-fondateur et président de Corolair
@@ -124,11 +117,21 @@ const AGENDA_FRIDAY: AgendaSlot[] = [
 - La transcription automatique en 99 langues as a service par **Jean-Louis Quéguiner**, fondateur de Gladia.io & ex-directeur IA et Big Data d'OVH
 - Enrichissement automatique de vidéos avec l'IA par le Paris Digital Lab de CentraleSupélec : **Antoine Vaglio**, **Mohammed Bahhad**, **Liwei Sun**, **Pierre-Louis Veyrenc**
     `,
-    start: "09:00",
-    end: "10:30",
-    tags: [TAG_ESQUIVE],
-    file: "Vendredi 9 9h Salle Esquive.zip",
+  start: "09:00",
+  end: "10:30",
+  tags: [TAG_ESQUIVE],
+  file: "Vendredi 9 9h Salle Esquive.zip",
+  videoUrl: "https://www.youtube.com/embed/XlXZO8lfem8",
+};
+
+const AGENDA_FRIDAY: AgendaSlot[] = [
+  {
+    title: "Accueil - Enregistrement / Petit Déjeuner rencontre",
+    start: "08:30",
+    end: "09:00",
+    tags: [TAG_HALL],
   },
+  SLOT_TRANSFORMATIONS_PRAGMATIQUES,
   SLOT_CAS_PRATIQUES,
   {
     title: "Pause café & stands, prompt party",

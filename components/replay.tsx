@@ -15,9 +15,22 @@ import {
   SLOT_WORKSHOP,
   SLOT_FEUILLE_ROUTE,
   SLOT_RESSOURCES_EDUCATIVES,
+  SLOT_TRANSFORMATIONS_PRAGMATIQUES,
 } from "@/components/agenda";
 
+const SLOT_INTRO = {
+  title: "Introduction à la Conférence IA & éducation",
+  description: `
+**Catherine Mongenet**, Directrice de France Université Numérique
+  `,
+  start: "09:00",
+  end: "10:30",
+  tags: [],
+  videoUrl: "https://www.youtube.com/embed/GICWvMEORAI",
+};
+
 const REPLAYS: AgendaSlot[] = [
+  SLOT_INTRO,
   SLOT_LUC_JULIA,
   SLOT_IMPACT_IA,
   SLOT_ENJEUX_ETHIQUES,
@@ -30,6 +43,7 @@ const REPLAYS: AgendaSlot[] = [
   SLOT_WORKSHOP,
   SLOT_RESSOURCES_EDUCATIVES,
   SLOT_FEUILLE_ROUTE,
+  SLOT_TRANSFORMATIONS_PRAGMATIQUES,
 ];
 
 export const Replays = () => {
@@ -62,7 +76,7 @@ const Replay = ({ replay }: { replay: AgendaSlot }) => {
         </div>
       </div>
 
-      <div className="text-left">
+      <div className="text-left w-full md:w-auto md:flex-grow">
         <AgendaSlotText slot={replay} />
       </div>
     </div>

@@ -67,7 +67,7 @@ Animation par **Sandrine Delacroix-Morvan**, responsable de communication de Fra
 
 export const SLOT_CAS_PRATIQUES = {
   title:
-    "Cas pratiques d'utilisation de l'apprentissage machine dans l'education",
+    "Cas pratiques d'utilisation de l'apprentissage machine dans l'éducation",
   description: `
 - Personnalisation des apprentissages avec l’IA : exemple d’Adaptiv’Langue/EvidenceB, par **Catherine de Vulpillières**, GM & CIO cofondatrice EvidenceB
 - A4LL, un système de learning analytics pour l'apprentissage du langage, par **Rémi Venant**, Enseignant-Chercheur en Informatique à Le Mans Université    

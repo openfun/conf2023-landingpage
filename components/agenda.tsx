@@ -247,7 +247,7 @@ Animation par **Caroline Crestani-Befve**, Responsable juridique et DPO de Franc
 export const SLOT_RESSOURCES_EDUCATIVES = {
   title: "Ressources éducatives libres sur l'IA par l'Inria",
   description: `
-Animation par **Bénédicte Cardon**, Responsable du service Éducation et Médiation Scientifiques d’Inria
+Animation par **Bénédicte Cardon**, Ingénieure pédagogique au service Éducation et Médiation Scientifiques d’Inria
 - Retour Mooc Intelligence artificielle avec intelligence - **Aurélie Lagarrigue** (Ingénieure pédagogique - Inria) et **Thierry Viéville** (Chercheur en neurosciences computationelles - Inria)
 - Décrypter les outils d'IA - Projet Erasmus+ AI4T Intelligence Artificielle pour et par les enseignants, **Bénédicte Cardon** (Ingénieure pédagogiquee - Inria) et **Azim Roussanaly** (Enseignant-chercheur en informatique - LORIA)
 - Retour Mooc Machine learning in Python with scikit-learn, **David Arturo Amor Quiroz** (Machine Learning Engineer - Inria)

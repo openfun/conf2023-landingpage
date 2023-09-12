@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: white;
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        background-image: url("../public/header.webp");
+        background-repeat: no-repeat;
+        background-position-x: -615px;
+        background-size: cover;
+    }
+}
+@media (min-width: 1280px) {
+    .hero {
+        background-position-x: -570px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .hero {
+        background-position-x: -360px;
+    }
+}
+
+@media (min-width: 1950px) {
+    .hero {
+        background-position-x: 0;
+    }
+}
